@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/gamepage.css">
+  <link rel="stylesheet" href="/css/disguise.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="gameframe-container"><iframe class="gameframe" src="https://smartfolooo.bitbucket.io/images/president-simulator"
+      allowfullscreen="" scrolling="no"></iframe>
+    <div class="options">
+      <div class="left">
+        <img class="game-image" src="/images/presidentsimulator.jpg" style="width: 35px; height: 35px; border-radius: 10px;">
+        <h1 id="gamename">President Simulator</h1>
+      </div> <button class="expand" onclick="fullscreen()">
+        <p class="expand-logo"><i class="fa-solid fa-expand" style="color: #fff;"></i></p>
+      </button>
+    </div>
+  </div>
+  <div class="ad">
+    <div class="adsrc">
+    </div>
+    <div class="adh1">Advertisement</div>
+  </div>
+  </div>
+  <div class="aboutblank" style="text-align:center; color: #fff;">
+
+    <div id="openaboutblank">
+      <h1 class="aboutblanktitle">about:blank</h1>
+      <label class="switch">
+        <input type="checkbox">
+        <span onclick="openblankpage()" class="slider round"></span>
+      </label>
+      <script>
+        function openblankpage() {
+          var win = window.open()
+          var url = window.location.href
+          var iframe = win.document.createElement('iframe')
+          iframe.style.position = "fixed"
+          iframe.style.width = "100%"
+          iframe.style.height = "100%"
+          iframe.style.border = "none"
+          iframe.style.top = "0"
+          iframe.style.bottom = "0"
+          iframe.style.left = "0"
+          iframe.style.right = "0"
+          iframe.style.margin = "0"
+          iframe.style.padding = "0"
+          iframe.style.overflow = "hidden"
+          iframe.src = url
+          win.document.body.appendChild(iframe)
+        }
+      </script>
+      </label>
+    </div>
+  </div>
+
+
+
+</body>
+<script src="/js/fullscreen.js" type="text/javascript"></script>
+
+</html>

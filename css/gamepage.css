@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400&display=swap');
+:root{
+	--proformer: #27292e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+	font-family: 'Figtree';
+  background: #16181c;
+	line-height: 1.7;
+	color: #fff;
+	letter-spacing: 0.2px;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear; 
+	scroll-behavior: smooth;
+}
+
+
+
+.main-content {
+  margin: 0 5%;
+}
+
+.gameframe-container{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  margin-top: 20px;
+  box-shadow: 0px 26px 58px 0px rgba(0,0,0,0.22), 0px 5px 14px 0px rgba(0,0,0,0.18);
+}
+
+.content iframe {
+  width: 900px;
+  height: 800px; 
+  border: none;
+  overflow: hidden;
+  
+}
+
+.content .game-wrap{
+  width: 900px;
+  height: 600px;
+  border: none;
+  overflow: hidden;
+}
+
+.content-controls {
+  background: black;
+  margin: 1rem auto;
+  height: 20px;
+}
+
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--proformer);
+  padding: 3px 0.5em 0.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.left{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+#gamename {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+
+.gameframe {
+  height: 80vh;
+  border: 3px solid #27292e;
+  overflow: scroll;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.expand {
+  border: none;
+  background: #27292e;
+}
+.expand-logo {
+  transition: transform .5s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.expand-logo:hover {
+  transform: scale(0.9); 
+}
+
+.game-stuff {
+  background-color: #5ff5f5;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 12px 0px;
+}
+
+#content-stuff {
+  color: var(--game-stuff);
+}
+
+.expand-logo {
+  font-size: 26px;
+}
+
+.aboutblank {
+  background: #27292e;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 12px 0px;
+}
+
+.aboutblanktitle {
+  font-size: 24px;
+}
+
+.adsrc {
+  background: #27292e;
+  font-size: 10px;
+  height: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 12px 0px;
+}
+
+.adh1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+

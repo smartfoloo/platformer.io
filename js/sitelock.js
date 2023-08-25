@@ -1,0 +1,1 @@
+var currentLocation = window.location;
