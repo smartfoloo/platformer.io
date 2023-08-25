@@ -11,3 +11,7 @@ The best place for Unblocked Games on Mars. This is a free-for-all unblocked gam
 [![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fplatformerdotio%2Fplatformerdotio.github.io) 
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/platformerdotio/platformerdotio.github.io)
 
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
