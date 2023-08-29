@@ -13,15 +13,44 @@
   justify-content: center;
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, 140px);
+  grid-template-columns: repeat(auto-fit, 150px);
   grid-auto-flow: row;
   margin-bottom: 10px;
+  text-align: center;
 }
 
+.input-div {
+  text-align: center;
+}
+
+input {
+  background: #27292e;
+  border: none;
+  padding: 15px 20px;
+  width: 50vw;
+  color: #fff;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  text-decoration-style: solid;
+  text-decoration-color: #fff;
+  transition: 300ms;
+  outline: none;
+}
+
+input:focus {
+  outline: 3px solid #1cd96a;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
 
 .game-card {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
