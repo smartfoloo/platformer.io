@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -8,9 +8,8 @@
   <title>Platformerdotio</title>
   <link rel="icon" href="/favicon.png" type="image/xcon" />
   <link rel="stylesheet" href="/css/navbar.css" />
-  <link rel="stylesheet" href="/css/games.css" />
-  <link rel="stylesheet" href="/css/footer.css" />
-  <!-- Google tag (gtag.js) -->
+  <link rel="stylesheet" href="/css/extras.css" />
+  <link rel="stylesheet" href="/css/toggle.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2W1BSNMG9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -40,45 +39,45 @@
   </nav>
   <div class="main-content">
     <div class="box">
-      <p>Announcement: More games coming soon!</p>
-      <p>Update: Added mobile support, calmer theme</p>
+      <h3 style="margin-bottom: 10px;">about:blank Cloak</h3>
+      <label class="switch">
+        <input type="checkbox">
+        <span onclick="openblankpage()" class="slider round"></span>
+      </label>
+      <script>
+        function openblankpage() {
+          var win = window.open()
+          var url = window.location.href
+          var iframe = win.document.createElement('iframe')
+          iframe.style.position = "fixed"
+          iframe.style.width = "100%"
+          iframe.style.height = "100%"
+          iframe.style.border = "none"
+          iframe.style.top = "0"
+          iframe.style.bottom = "0"
+          iframe.style.left = "0"
+          iframe.style.right = "0"
+          iframe.style.margin = "0"
+          iframe.style.padding = "0"
+          iframe.style.overflow = "hidden"
+          iframe.src = url
+          win.document.body.appendChild(iframe)
+        }
+      </script>
     </div>
-    <div class="center">
-      <a href="/games/subway-surfers/chicago/" target="_parent">
-        <div class="game-card">
-          <div class="content">
-            <p class="title">Subway Surfers Chicago</p>
-          </div>
-          <img src="/images/chicago.png" />
-        </div>
-      </a>
-      <a href="/games/subway-surfers/new-york/" target="_parent">
-        <div class="game-card">
-          <div class="content">
-            <p class="title">Subway Surfers New York</p>
-          </div>
-          <img src="/images/newyork.jpeg" />
-        </div>
-      </a>
-      <a href="/games/subway-surfers/san-francisco/" target="_parent">
-        <div class="game-card">
-          <div class="content">
-            <p class="title">Subway Surfers San Francisco</p>
-          </div>
-          <img src="/images/sanfrancisco.jpeg" />
-        </div>
-      </a>
-      <a href="/games/subway-surfers/monaco/" target="_parent">
-        <div class="game-card">
-          <div class="content">
-            <p class="title">Subway Surfers Monaco</p>
-          </div>
-          <img src="/images/monaco.webp" />
-        </div>
-      </a>
-
+    <div class="box">
+      <h3 style="margin-bottom: 10px;">Translate Site</h3>
+      <div id="google_translate_element"></div>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({ pageLanguage: "en", layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, "google_translate_element");
+        }
+      </script>
+      <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </div>
   </div>
+  
 </body>
 
 </html>

@@ -15,6 +15,7 @@ h2{
 h3 {
   font-weight: 300;
   font-size: 24px;
+  margin-bottom: 10px;
 }
 
 h4 {
@@ -22,21 +23,11 @@ h4 {
   font-size: 18px;
 }
 
-.game-request {
-  background: #27292e;
-  border-radius: 10px;
+.main-content {
   margin-top: 80px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 10px;
-  padding-left: 47px;
-  padding-right: 47px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
 }
 
-.alternate-links {
+.box {
   background: #27292e;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -48,16 +39,3 @@ h4 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
-
-.discord {
-    background: #27292e;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
-    padding-left: 47px;
-    padding-right: 47px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
