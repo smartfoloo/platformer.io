@@ -5,11 +5,13 @@ body {
 
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
+  margin: 20px;
 }
 
 h2{
   font-size: 30px;
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -25,6 +27,7 @@ h4 {
 
 .main-content {
   margin-top: 80px;
+  text-align: center;
 }
 
 .box {
