@@ -5,6 +5,7 @@
 .main-content {
   color: #fff;
   margin-top: 80px;
+  text-align: center;
 }
 
 .center {
@@ -98,7 +99,6 @@ input:focus {
   text-align: center;
   background: #27292e;
   padding: 5px;
-  margin-top: 80px;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
