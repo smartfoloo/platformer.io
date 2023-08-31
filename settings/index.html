@@ -41,6 +41,41 @@
   <div class="main-content">
     <h1>Settings</h1>
     <div class="box">
+      <h3 style="margin-bottom: 10px;">Tab Cloak</h3>
+      <div class="buttons">
+        <input id="title" class="input" placeholder="Title" onkeyup="setTitle(this.value)" />
+        <input id="icon" class="input" placeholder="Favicon" onkeyup="setFavicon(this.value.trim())" />
+      </div>
+      <br />
+      <p class="section-text">Or choose a readymade cloak:</p>
+      <div class="buttons">
+        <select name="Readymade Cloaks" id="premadecloaks" title="Cloaks">
+          <option value="search">Google Search</option>
+          <option value="bsite">BillyBilly</option>
+          <option value="itchio">ItchiIo</option>
+          <option value="wikipedia">Wikipedio</option>
+          <option value="search">Google Search</option>
+          <option value="cornhub">Cornhub</option>
+          <option value="librex">LibreX</option>
+          <option value="nitter">Nitter</option>
+          <option value="indivious">Indivious</option>
+          <option value="teddit">Teddit</option>
+          <option value="drive">Google Drive</option>
+          <option value="youtube">YouTube</option>
+          <option value="gmail">Gmail</option>
+          <option value="calendar">Google Calendar</option>
+          <option value="meets">Google Meet</option>
+          <option value="classroom">Google Classroom</option>
+          <option value="canvas">Canvas</option>
+          <option value="zoom">Zoom</option>
+          <option value="khan">Khan Academy</option>
+        </select>
+      
+        <button class="button" onclick="setCloak()">Set readymade cloak</button>
+        <button class="button" onclick="resetTab()">Reset</button>
+      </div>
+    </div>
+    <div class="box">
       <h3 style="margin-bottom: 10px;">about:blank Cloak</h3>
       <label class="switch">
         <input type="checkbox">
