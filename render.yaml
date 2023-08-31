@@ -1,5 +1,5 @@
 services:
   - type: web
-    name: platformerdotio
+    name: Platformer.io
     env: static
     staticPublishPath: .

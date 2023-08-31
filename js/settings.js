@@ -18,7 +18,7 @@ if (tabData.icon) {
 }
 
 var settingsDefaultTab = {
-  title: "Platformerdotio",
+  title: "Platformer.io",
   icon: "/favicon.png",
 };
 
