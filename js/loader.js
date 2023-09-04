@@ -28,7 +28,7 @@ if (gameToLoad) {
     const title = gameToLoad.charAt(0).toUpperCase() + gameToLoad.slice(1).replace(/-/g, ' ');
 
     gamename.textContent = title;
-    gameframe.src = 'https://smartfolooo.bitbucket.io/images/${gameToLoad}';
+    gameframe.src = `https://smartfolooo.bitbucket.io/images/${gameToLoad}`;
 
     loader.style.display = 'flex';
     gameframe.style.display = 'none';
