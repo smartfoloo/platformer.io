@@ -15,7 +15,7 @@ The best place for Unblocked Games on Mars. This is a free-for-all unblocked gam
 
 #### All of the links are blocked.
 
-You can make your own custom link by either froking this repo and adding a custom domain, or use a cloud hosting solution such as Netlify and Vercel. The links are on the **Deployment** Section.
+You can make your own custom link by either forking this repo and adding a custom domain or using a cloud hosting solution such as Netlify or Vercel. The links are in the **Deployment** Section.
 
 #### Did you make these games?
 
@@ -27,7 +27,7 @@ You can request a game on our site under Extras. Remember, your game may not be 
 
 #### Please give me mod!!!!
 
-No, we do not have any open spots for moderator. Sorry:)
+No, we do not have any open spots for moderators. Sorry:)
 
 ## License
 
