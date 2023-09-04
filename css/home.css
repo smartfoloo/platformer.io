@@ -11,9 +11,7 @@ body {
   margin-top: 80px;
   margin-left: 10px;
   margin-right: 10px;
-  padding: 10px;
-  padding-left: 47px;
-  padding-right: 47px;
+  padding: 10px 47px;
   text-align: center;
 }
 
@@ -29,6 +27,7 @@ h2 {
 h3 {
   font-weight: 300;
   font-size: 30px;
+  margin: 10px;
 }
 
 h4 {
@@ -63,9 +62,7 @@ h5 {
   margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  padding: 10px;
-  padding-left: 47px;
-  padding-right: 47px;
+  padding: 10px 47px;
   text-align: center;
 }
 
@@ -78,8 +75,7 @@ h5 {
   margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  padding: 10px;
-  padding-left: 47px;
+  padding: 10px 47px;
 }
 
 .games-grid {
@@ -88,7 +84,7 @@ h5 {
   justify-content: center;
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(auto-fit, 220px);
   grid-auto-flow: row;
   margin-top: 40px;
 }
@@ -96,14 +92,11 @@ h5 {
 .game-card {
   background: #2e323c;
   text-align: center;
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  border-radius: 30px;
+  margin: 10px;
   padding: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 300px;
+  width: 220px;
   transition: all 300ms;
 }
 
@@ -141,7 +134,7 @@ h5 {
   justify-content: center;
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(auto-fit, 220px);
   grid-auto-flow: row;
   margin-top: 40px;
 }
@@ -149,14 +142,11 @@ h5 {
 .partner-card {
   background: #2e323c;
   text-align: center;
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  border-radius: 30px;
+  margin: 10px;
   padding: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 300px;
+  width: 220px;
   transition: all 300ms;
 }
 
@@ -243,4 +233,45 @@ h5 {
 
 .social-icons .fa-twitter {
   background-color: #1da1f3;
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  h4 {
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0px 120px;
+  }
+
+  h5 {
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  .main {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  .about {
+    padding: 10px 20px;
+  }
 }
