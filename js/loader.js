@@ -36,6 +36,6 @@ if (gameToLoad) {
     setTimeout(() => {
       loader.style.display = 'none';
       gameframe.style.display = 'block';
-    }, 3000);
+    }, 300);
   }
 }
