@@ -25,7 +25,8 @@ if (gameToLoad) {
   };
 
   function loadGame() {
-    const title = gameToLoad.charAt(0).toUpperCase() + gameToLoad.slice(1).replace(/-/g, ' ');
+    const words = gameToLoad.split('-');
+    const title = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
     gamename.textContent = title;
     gameframe.src = `https://smartfolooo.bitbucket.io/images/${gameToLoad}`;
