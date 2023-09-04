@@ -8,19 +8,34 @@ const gameToLoad = params.get('game');
 
 if (gameToLoad) {
   const imageName = gameToLoad.replace(/-/g, '');
-  const imageSrc = `/images/${imageName}.png`;
-  const title = gameToLoad.charAt(0).toUpperCase() + gameToLoad.slice(1).replace(/-/g, ' ');
+  const imageSrcPng = `/images/${imageName}.png`;
+  const imageSrcAvif = `/images/${imageName}.avif`;
 
-  gameimage.src = imageSrc;
-  gamename.textContent = title;
+  const imageChecker = new Image();
+  imageChecker.src = imageSrcPng;
 
-  gameframe.src = `https://smartfolooo.bitbucket.io/images/${gameToLoad}`;
+  imageChecker.onload = function () {
+    gameimage.src = imageSrcPng;
+    loadGame();
+  };
 
-  loader.style.display = 'flex';
-  gameframe.style.display = 'none';
+  imageChecker.onerror = function () {
+    gameimage.src = imageSrcAvif;
+    loadGame();
+  };
 
-  setTimeout(() => {
-    loader.style.display = 'none';
-    gameframe.style.display = 'block';
-  }, 3000);
+  function loadGame() {
+    const title = gameToLoad.charAt(0).toUpperCase() + gameToLoad.slice(1).replace(/-/g, ' ');
+
+    gamename.textContent = title;
+    gameframe.src = 'https://smartfolooo.bitbucket.io/images/${gameToLoad}';
+
+    loader.style.display = 'flex';
+    gameframe.style.display = 'none';
+
+    setTimeout(() => {
+      loader.style.display = 'none';
+      gameframe.style.display = 'block';
+    }, 3000);
+  }
 }
