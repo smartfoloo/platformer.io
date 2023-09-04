@@ -10,6 +10,7 @@ body {
   background: #16181c;
   font-weight: 400;
 }
+
 .nav {
   top: 0px;
   position: fixed;
@@ -21,6 +22,7 @@ body {
   border-radius: 10px;
   margin: 10px;
   justify-content: space-between;
+  height: 56px;
 }
 .nav,
 .nav .nav-links {
