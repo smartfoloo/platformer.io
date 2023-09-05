@@ -26,6 +26,12 @@ h2 {
   font-size: 40px;
 }
 
+h3 {
+  font-weight: 300;
+  font-size: 30px;
+  margin: 10px;
+}
+
 .main-content {
   margin-top: 80px;
 }
@@ -122,17 +128,18 @@ h2 {
 }
 
 #urlInput {
-  padding: 10px 15px;
+  padding: 15px 20px;
   outline: none;
-  background: #114a29;
+  background: #43444e;
   border-radius: 10px;
   border: none;
   width: 50%;
+  margin: 10px;
   color: #fff;
 }
 
 #copyButton {
-  padding: 10px 15px;
+  padding: 15px 20px;
   outline: none;
   background: #114a29;
   border-radius: 10px;
@@ -143,7 +150,7 @@ h2 {
 }
 
 #copyButton:hover {
-  background: #186638;
+  background: #0d341c;
 }
 
 @media screen and (max-width: 1000px) {
