@@ -21,6 +21,11 @@ body{
   text-align: center;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
 .main-content {
   margin-top: 80px;
 }
@@ -106,22 +111,39 @@ body{
   font-size: 24px;
 }
 
-.adsrc {
+.box {
   background: #27292e;
   font-size: 10px;
-  height: 150px;
   margin: 50px 200px;
+  padding: 15px;
   border-radius: 10px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 12px 0px;
 }
 
-.adh1 {
-  text-align: center;
-  margin-bottom: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
-  text-transform: uppercase;
+#urlInput {
+  padding: 10px 15px;
+  outline: none;
+  background: #114a29;
+  border-radius: 10px;
+  border: none;
+  width: 50%;
+  color: #fff;
+}
+
+#copyButton {
+  padding: 10px 15px;
+  outline: none;
+  background: #114a29;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#copyButton:hover {
+  background: #186638;
 }
 
 @media screen and (max-width: 1000px) {
@@ -129,7 +151,7 @@ body{
     margin: 50px 100px;
   }
 
-  .adsrc {
+  .box {
     margin: 50px 100px;
   }
 }
@@ -139,7 +161,7 @@ body{
     margin: 50px 50px;
   }
 
-  .adsrc {
+  .box {
     margin: 50px 50px;
   }
 }

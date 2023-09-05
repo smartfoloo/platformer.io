@@ -42,9 +42,9 @@
       <iframe class="gameframe" src="" allowfullscreen="" scrolling="no"></iframe>
       <div class="options">
         <div class="left">
-          <img class="game-image" src="/images/10minutestilldawn.png"
+          <img class="game-image" src="/favicon.png"
             style="width: 35px; height: 35px; border-radius: 10px;">
-          <h1 id="gamename" style="font-weight: 300;">Game</h1>
+          <h1 id="gamename" style="font-weight: 300;">No Game Here...</h1>
         </div>
         <button class="expand" onclick="fullscreen()">
           <p class="expand-logo">
@@ -53,14 +53,16 @@
         </button>
       </div>
     </div>
-    <div class="ad">
-      <div class="adsrc"></div>
-      <div class="adh1">Advertisement</div>
+    <div class="box">
+      <h2>Share</h2>
+      <input type="text" id="urlInput" readonly>
+      <button id="copyButton">Copy Link</button>
     </div>
   </div>
 </body>
 <script src="/js/fullscreen.js" type="text/javascript"></script>
 <script src="/js/index.js"></script>
 <script src="/js/loader.js"></script>
+<script src="/js/share.js"></script>
 
 </html>
