@@ -18,5 +18,8 @@ document.getElementById('urlInput').value = getCurrentURL();
 document.getElementById('copyButton').addEventListener('click', function () {
   const url = getCurrentURL();
   copyToClipboard(url);
-  alert('URL copied to clipboard: ' + url);
+  document.getElementById('urlInput').value = 'Link Copied!';
+  setTimeout(function () {
+    document.getElementById('urlInput').value = getCurrentURL();
+  }, 2000);
 });
