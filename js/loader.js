@@ -29,7 +29,7 @@ if (gameToLoad) {
     const title = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
     gamename.textContent = title;
-    gameframe.src = `https://smartfolooo.bitbucket.io/images/${gameToLoad}`;
+    gameframe.src = `/assets/${gameToLoad}`
 
     loader.style.display = 'flex';
     gameframe.style.display = 'none';
