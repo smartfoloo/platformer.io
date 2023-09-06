@@ -1,24 +1,10 @@
-const allowedDomains = [
-  {
-    domain: 'platformerdotio.co',
-    directories: ['/games']
-  },
-  {
-    domain: 'platformerdotio.onrender.com',
-    directories: ['/games']
-  }
+const allowedFileURLs = [
+  'https://platformerdotio.co/play.html',
+  'https://platformerdotio.onrender.com/play.html',
 ];
 
-const currentDomain = window.location.hostname;
-const domainEntry = allowedDomains.find(entry => entry.domain === currentDomain);
+const currentURL = window.location.href;
 
-if (!domainEntry) {
-  window.location.href = 'https://platformerdotio.co';
-} else {
-  const currentPath = window.location.pathname;
-  const isNotAllowed = !domainEntry.directories.some(allowedDir => currentPath.startsWith(allowedDir));
-  const redirectURL = 'https://' + currentDomain;
-  if (isNotAllowed) {
-    window.location.href = redirectURL;
-  }
+if (!allowedFileURLs.some(allowedURL => currentURL.startsWith(allowedURL))) {
+  window.location.href = 'https://platformerdotio.co/';
 }
