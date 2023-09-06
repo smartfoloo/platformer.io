@@ -1,15 +1,24 @@
-var allowedDomains = [
-  "https://platformerdotio.co",
-  "https://platformerio.bitbucket.io/",
-  "https://platformerdotio.onrender.com",
+const allowedDomains = [
+  {
+    domain: 'platformerdotio.co',
+    directories: ['/games']
+  },
+  {
+    domain: 'platformerdotio.onrender.com',
+    directories: ['/games']
+  }
 ];
 
-var referringUrl = document.referrer;
+const currentDomain = window.location.hostname;
+const domainEntry = allowedDomains.find(entry => entry.domain === currentDomain);
 
-var isAllowedDomain = allowedDomains.some(function (domain) {
-  return referringUrl.indexOf(domain) !== -1;
-});
-
-if (!isAllowedDomain) {
-  window.location.href = allowedDomains[0];
+if (!domainEntry) {
+  window.location.href = 'https://platformerdotio.co';
+} else {
+  const currentPath = window.location.pathname;
+  const isNotAllowed = !domainEntry.directories.some(allowedDir => currentPath.startsWith(allowedDir));
+  const redirectURL = 'https://' + currentDomain;
+  if (isNotAllowed) {
+    window.location.href = redirectURL;
+  }
 }
