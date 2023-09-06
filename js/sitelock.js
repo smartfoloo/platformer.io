@@ -5,6 +5,6 @@ const allowedFileURLs = [
 
 const currentURL = window.location.href;
 
-if (!allowedFileURLs.some(allowedURL => currentURL.startsWith(allowedURL))) {
+if (!allowedFileURLs.some(allowedURL => currentURL === allowedURL || currentURL.startsWith(allowedURL + '?'))) {
   window.location.href = 'https://platformerdotio.co/';
 }
