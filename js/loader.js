@@ -29,7 +29,7 @@ if (gameToLoad) {
     const title = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
     gamename.textContent = title;
-    gameframe.src = `https://smartfolooo.bitbucket.io/images/${gameToLoad}`;
+    gameframe.src = `/assets/${gameToLoad}`;
 
     loader.style.display = 'flex';
     gameframe.style.display = 'none';
@@ -38,19 +38,5 @@ if (gameToLoad) {
       loader.style.display = 'none';
       gameframe.style.display = 'block';
     }, 300);
-  }
-
-  if (gameframe) {
-    gameframe.onload = function () {
-      var iframeContent = gameframe.contentDocument || gameframe.contentWindow.document;
-      var rateLimitMessage = "Rate limit";
-
-      var contentText = iframeContent.body.innerText.toLowerCase();
-      var messageText = rateLimitMessage.toLowerCase();
-
-      if (contentText.includes(messageText)) {
-        gameframe.src = `https://smartfoloo.netlify.app/${gameToLoad}`;
-      }
-    };
   }
 }
