@@ -29,7 +29,14 @@ if (gameToLoad) {
     const title = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
     gamename.textContent = title;
-    gameframe.src = `/assets/${gameToLoad}`;
+
+    if (gameToLoad === 'taming-io') {
+      gameframe.src = 'hhttps://school-homework.com/';
+    } else if (gameToLoad === 'dogeminer2') {
+      gameframe.src = '#';
+    } else {
+      gameframe.src = `/assets/${gameToLoad}`;
+    }
 
     loader.style.display = 'flex';
     gameframe.style.display = 'none';
