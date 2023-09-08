@@ -31,7 +31,7 @@ if (gameToLoad) {
     gamename.textContent = title;
 
     if (gameToLoad === 'taming-io') {
-      gameframe.src = 'hhttps://school-homework.com/';
+      gameframe.src = 'https://school-homework.com/';
     } else if (gameToLoad === 'dogeminer2') {
       gameframe.src = '#';
     } else {
