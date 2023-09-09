@@ -38,11 +38,7 @@ input {
   text-decoration-style: solid;
   text-decoration-color: #fff;
   transition: 300ms;
-  outline: none;
-}
-
-input:focus {
-  outline: 3px solid #1cd96a;
+  outline: 1px solid #495057;
 }
 
 ::placeholder {

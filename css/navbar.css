@@ -142,8 +142,8 @@ label {
   font-family: 'Inter';
 }
 
-select:active {
-  transform: scale(1.05);
+select:focus {
+  transform: scale(1.1);
 }
 
 option {
