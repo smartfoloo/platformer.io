@@ -35,7 +35,7 @@ if (gameToLoad) {
     } else if (gameToLoad === 'dogeminer2') {
       gameframe.src = '#';
     } else {
-      gameframe.src = `https://smartfoloolol.netlify.app/assets/${gameToLoad}`;
+      gameframe.src = `/assets/${gameToLoad}`;
     }
 
     loader.style.display = 'flex';
