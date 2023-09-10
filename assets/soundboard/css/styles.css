@@ -1,14 +1,14 @@
-/* Unminify the code here: https://unminify.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter';
 }
 
 body {
   background-color: #16181c;
-  color: #fff;
   font-size: 16px;
 }
 
@@ -33,6 +33,7 @@ a:hover {
   text-decoration: underline;
 }
 
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -45,25 +46,27 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   width: 100px;
-  height: 170px;
+  height: 150px;
   background-color: #27292e;
   border-radius: 8px;
+  color: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease-in-out;
+  cursor: pointer
 }
 
 .sound:hover {
-  transform: translateY(-5px);
+  transform: scale(0.95)
 }
 
 .sound:focus-within {
   outline: none;
-  transform: translateY(-5px);
+  transform: scale(0.95);
 }
 
 .small-button {
   width: 100px;
-  height: 89px;
+  height: 100px;
   border: none;
   background-color: #27292e;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8 5v14l11-7z'/%3E%3C/svg%3E");
@@ -72,10 +75,11 @@ a:hover {
   background-size: 48px;
   border-radius: 8px;
   transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .sound:hover .small-button {
-  background-color: #16181c;
+  background-color: #27292e;
 }
 
 .small-button:focus {
@@ -86,7 +90,7 @@ a:hover {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  margin: 1rem 0 0;
+  margin: 10px 5px;
 }
 
 .download {
@@ -121,7 +125,8 @@ a:hover {
   right: 0;
   margin: 1rem;
   padding: 0.5rem;
-  background-color: #16181c;
+  background-color: #27292e;
+  color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -147,9 +152,8 @@ a:hover {
   padding: 20px 0;
   text-align: center;
   font-size: 14px;
-  color: #262626;
-  background-color: #fff;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  background-color: #16181c;
 }
 
 @media only screen and (max-width: 768px) {

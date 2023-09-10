@@ -16,69 +16,30 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="manifest" href="./manifest.json" />
   <link rel="stylesheet" href="css/spinner.css" />
-  <script type="efeb828d174ff67af85a3b53-text/javascript">
-            if ("serviceWorker" in navigator){navigator.serviceWorker .register("/sw.js") .then(function (registration){console.log("Service worker registered:", registration);}) .catch(function (error){console.log("Service worker registration failed:", error);});}
-        </script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("/sw.js")
+        .then(function (registration) {
+          console.log("Service worker registered:", registration);
+        })
+        .catch(function (error) {
+          console.log("Service worker registration failed:", error);
+        });
+    }
+  </script>
 </head>
 
 <body>
-  <h1>Online Soundboard</h1>
-  <h2>
-    Just click on the colorful buttons to play the sound.<br />
-    <a href="https://forms.gle/hoiTBEZ4p14iupXH6">Click here to submit a sound to be added!</a><br />
-  </h2>
-  <div class="control">
-    Audio Controls <button class="woah" onclick="if (!window.__cfRLUnblockHandlers) return false; javascript:playAll()"
-      data-cf-modified-efeb828d174ff67af85a3b53->Provoke Chaos</button>
-    <button class="woah" onclick="if (!window.__cfRLUnblockHandlers) return false; javascript:stopAll()"
-      data-cf-modified-efeb828d174ff67af85a3b53->Stop Everything</button>
-  </div>
+  <div class="control">Audio Controls <button class="woah" onclick="javascript:playAll()">Provoke Chaos</button> <button
+      class="woah" onclick="javascript:stopAll()">Stop Everything</button></div>
   <div class="soundboard-container">
     <div class="flex-container">
       <div class="spinner"></div>
     </div>
   </div>
   <p id="footer">3kh0 © 2023</p>
-  <script type="efeb828d174ff67af85a3b53-application/javascript" src="loader.js"></script>
-  <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
-    data-cf-settings="efeb828d174ff67af85a3b53-|49" defer></script>
-  <script>
-    (function () {
-      var js =
-        "window['__CF$cv$params']={r:'8049a5d0dd952e63',t:'MTY5NDM2OTYzNi4wMTgwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";
-      var _0xh = document.createElement("iframe");
-      _0xh.height = 1;
-      _0xh.width = 1;
-      _0xh.style.position = "absolute";
-      _0xh.style.top = 0;
-      _0xh.style.left = 0;
-      _0xh.style.border = "none";
-      _0xh.style.visibility = "hidden";
-      document.body.appendChild(_0xh);
-      function handler() {
-        var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;
-        if (_0xi) {
-          var _0xj = _0xi.createElement("script");
-          _0xj.innerHTML = js;
-          _0xi.getElementsByTagName("head")[0].appendChild(_0xj);
-        }
-      }
-      if (document.readyState !== "loading") {
-        handler();
-      } else if (window.addEventListener) {
-        document.addEventListener("DOMContentLoaded", handler);
-      } else {
-        var prev = document.onreadystatechange || function () { };
-        document.onreadystatechange = function (e) {
-          prev(e);
-          if (document.readyState !== "loading") {
-            document.onreadystatechange = prev;
-            handler();
-          }
-        };
-      }
-    })();
-  </script>
+  <script type="application/javascript" src="loader.js"></script>
 </body>
 
 </html>
