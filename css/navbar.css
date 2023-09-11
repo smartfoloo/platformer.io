@@ -157,10 +157,6 @@ option {
   height: 0.5rem;
 }
 
-::-webkit-scrollbar-track {
-  background: #171717;
-}
-
 ::-webkit-scrollbar-thumb {
   background: #114a29;
   border-radius: 8px;
