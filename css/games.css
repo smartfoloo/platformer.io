@@ -22,6 +22,7 @@
 
 .input-div {
   text-align: center;
+  margin: 10px 0px;
 }
 
 input {
@@ -33,7 +34,6 @@ input {
   color: #fff;
   text-align: center;
   margin: 10px;
-  margin-bottom: 30px;
   border-radius: 10px;
   text-decoration-style: solid;
   text-decoration-color: #fff;
@@ -44,6 +44,24 @@ input {
 ::placeholder {
   color: #fff;
   font-size: 16px;
+}
+
+#randomGameButton {
+  color: #fff;
+  background: #27292e;
+  border: 0px;
+  font-size: 16px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: all 300ms;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px 0px;
+  outline: 1px solid #495057;
+}
+
+#randomGameButton:hover {
+  transform: scale(0.95)
 }
 
 .game-card {
