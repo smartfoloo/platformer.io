@@ -14,3 +14,10 @@ searchInput.addEventListener("input", function () {
     }
   }
 });
+
+document.getElementById('randomGameButton').addEventListener('click', function () {
+  const gameLinks = document.querySelectorAll('#gameList a');
+  const randomIndex = Math.floor(Math.random() * gameLinks.length);
+  const randomGameLink = gameLinks[randomIndex];
+  window.location.href = randomGameLink.href;
+});
