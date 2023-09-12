@@ -30,12 +30,22 @@ if (gameToLoad) {
 
     gamename.textContent = title;
 
-    if (gameToLoad === 'taming-io') {
-      gameframe.src = 'https://school-homework.com/';
-    } else if (gameToLoad === 'dogeminer2') {
-      gameframe.src = '#';
-    } else {
-      gameframe.src = `/assets/${gameToLoad}`;
+    if (gameframe) {
+      var rateLimitMessage = "Rate limit for this resource has been exceeded";
+      var contentText = gameframe.contentDocument.body.innerText.toLowerCase();
+      var messageText = rateLimitMessage.toLowerCase();
+
+      if (contentText.includes(messageText)) {
+        if (gameToLoad === 'taming-io') {
+          gameframe.src = 'https://school-homework.com/';
+        } else if (gameToLoad === 'dogeminer2') {
+          gameframe.src = '#';
+        } else {
+          gameframe.src = `https://smartfoloolol.netlify.app/assets/${gameToLoad}`;
+        }
+      } else {
+        gameframe.src = `https://smartfoloo.bitbucket.io/images/${gameToLoad}`;
+      }
     }
 
     loader.style.display = 'flex';
