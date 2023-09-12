@@ -31,7 +31,7 @@ if (gameToLoad) {
     gamename.textContent = title;
 
     if (gameframe) {
-      var rateLimitMessage = "Rate limit for this resource has been exceeded";
+      var rateLimitMessage = "Rate limit";
       var contentText = gameframe.contentDocument.body.innerText.toLowerCase();
       var messageText = rateLimitMessage.toLowerCase();
 
