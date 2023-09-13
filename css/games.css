@@ -18,6 +18,7 @@
   grid-auto-flow: row;
   margin-bottom: 10px;
   text-align: center;
+  line-height: 1.7;
 }
 
 .input-div {

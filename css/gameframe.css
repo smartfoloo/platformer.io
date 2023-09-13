@@ -117,7 +117,7 @@ h3 {
   font-size: 24px;
 }
 
-.box {
+.box-game {
   background: #27292e;
   font-size: 10px;
   margin: 50px 200px;
@@ -127,15 +127,29 @@ h3 {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 12px 0px;
 }
 
+.games-grid {
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, 150px);
+  grid-auto-flow: row;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.7;
+}
+
 #urlInput {
   padding: 15px 20px;
   outline: none;
-  background: #43444e;
+  background: #434956;
   border-radius: 10px;
   border: none;
   width: 50%;
   margin: 10px;
   color: #fff;
+  font-size: 16px;
 }
 
 #copyButton {
@@ -147,6 +161,7 @@ h3 {
   color: #fff;
   cursor: pointer;
   transition: 300ms;
+  font-size: 16px;
 }
 
 #copyButton:hover {
@@ -158,9 +173,10 @@ h3 {
     margin: 50px 100px;
   }
 
-  .box {
+  .box-game {
     margin: 50px 100px;
   }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -168,7 +184,26 @@ h3 {
     margin: 50px 50px;
   }
 
-  .box {
+  .box-game {
     margin: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .games-grid {
+    grid-template-columns: repeat(auto-fit, 180px);
+    grid-auto-flow: row;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .game-card {
+    width: 180px;
+    height: 180px;
+    border-radius: 35px;
+    overflow: hidden;
+    position: relative;
+    transition: all 300ms;
+    border: 3px solid transparent;
   }
 }

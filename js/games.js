@@ -21,3 +21,17 @@ document.getElementById('randomGameButton').addEventListener('click', function (
   const randomGameLink = gameLinks[randomIndex];
   window.location.href = randomGameLink.href;
 });
+
+const gameCards = document.querySelectorAll('.game-card');
+const shuffledGameCards = Array.from(gameCards);
+for (let i = shuffledGameCards.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1));
+  [shuffledGameCards[i], shuffledGameCards[j]] = [shuffledGameCards[j], shuffledGameCards[i]];
+}
+const selectedGameCards = shuffledGameCards.slice(0, 5);
+
+const gameData = selectedGameCards.map(card => {
+  return card.outerHTML;
+});
+
+localStorage.setItem('selectedGamesData', JSON.stringify(gameData));

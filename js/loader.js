@@ -57,3 +57,14 @@ if (gameToLoad) {
     }, 300);
   }
 }
+
+
+const savedGameCardHTML = JSON.parse(localStorage.getItem('selectedGamesHTML')) || [];
+const existingDiv = document.getElementById('box');
+savedGameCardHTML.forEach(cardHTML => {
+  const gameCardWrapper = document.createElement('div');
+  gameCardWrapper.innerHTML = cardHTML;
+  existingDiv.appendChild(gameCardWrapper.firstElementChild);
+});
+
+
