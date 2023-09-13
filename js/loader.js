@@ -7,64 +7,48 @@ const params = new URLSearchParams(window.location.search);
 const gameToLoad = params.get('game');
 
 if (gameToLoad) {
-  const imageName = gameToLoad.replace(/-/g, '');
-  const imageSrcPng = `/images/${imageName}.png`;
-  const imageSrcAvif = `/images/${imageName}.avif`;
+  if (gameToLoad === 'taming-io') {
+    gameframe.src = 'https://school-homework.com/';
+    gamename.textContent = 'Taming.io';
+  if (gameToLoad === 'little-alchemy-2') {
+    gameframe.src = 'https://littlealchemy2.com';
+  }
+  } else if (gameToLoad === 'dogeminer2') {
+    gameframe.src = '#';
+    gamename.textContent = 'Dogeminer 2';
+    gameimage.style.display = 'none';
+  } else {
+    const imageName = gameToLoad.replace(/-/g, '');
+    const imageSrcPng = `/images/${imageName}.png`;
+    const imageSrcAvif = `/images/${imageName}.avif`;
 
-  const imageChecker = new Image();
-  imageChecker.src = imageSrcPng;
+    const imageChecker = new Image();
+    imageChecker.src = imageSrcPng;
 
-  imageChecker.onload = function () {
-    gameimage.src = imageSrcPng;
-    loadGame();
-  };
+    imageChecker.onload = function () {
+      gameimage.src = imageSrcPng;
+      loadGame();
+    };
 
-  imageChecker.onerror = function () {
-    gameimage.src = imageSrcAvif;
-    loadGame();
-  };
+    imageChecker.onerror = function () {
+      gameimage.src = imageSrcAvif;
+      loadGame();
+    };
 
-  function loadGame() {
-    const words = gameToLoad.split('-');
-    const title = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+    function loadGame() {
+      const words = gameToLoad.split('-');
+      const title = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
-    gamename.textContent = title;
+      gamename.textContent = title;
+      gameframe.src = `https://smartfoloo.netlify.app/images/${gameToLoad}`;
 
-    if (gameframe) {
-      var rateLimitMessage = "Rate limit";
-      var contentText = gameframe.contentDocument.body.innerText.toLowerCase();
-      var messageText = rateLimitMessage.toLowerCase();
+      loader.style.display = 'flex';
+      gameframe.style.display = 'none';
 
-      if (contentText.includes(messageText)) {
-        if (gameToLoad === 'taming-io') {
-          gameframe.src = 'https://school-homework.com/';
-        } else if (gameToLoad === 'dogeminer2') {
-          gameframe.src = '#';
-        } else {
-          gameframe.src = `https://smartfoloolol.netlify.app/assets/${gameToLoad}`;
-        }
-      } else {
-        gameframe.src = `https://smartfoloo.bitbucket.io/images/${gameToLoad}`;
-      }
+      setTimeout(() => {
+        loader.style.display = 'none';
+        gameframe.style.display = 'block';
+      }, 300);
     }
-
-    loader.style.display = 'flex';
-    gameframe.style.display = 'none';
-
-    setTimeout(() => {
-      loader.style.display = 'none';
-      gameframe.style.display = 'block';
-    }, 300);
   }
 }
-
-
-const savedGameCardHTML = JSON.parse(localStorage.getItem('selectedGamesHTML')) || [];
-const existingDiv = document.getElementById('box');
-savedGameCardHTML.forEach(cardHTML => {
-  const gameCardWrapper = document.createElement('div');
-  gameCardWrapper.innerHTML = cardHTML;
-  existingDiv.appendChild(gameCardWrapper.firstElementChild);
-});
-
-
