@@ -9,13 +9,9 @@
 }
 
 .center {
-  gap: 10px;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  display: grid;
-  max-width: 100%;
-  grid-template-columns: repeat(auto-fit, 150px);
-  grid-auto-flow: row;
   margin-bottom: 10px;
   text-align: center;
   line-height: 1.7;
@@ -73,6 +69,8 @@ input {
   position: relative;
   transition: all 300ms;
   border: 3px solid transparent;
+  display: block;
+  margin: 5px;
 }
 
 .game-card:hover {
@@ -131,15 +129,12 @@ input {
 
 @media screen and (max-width: 1400px) {
   .center {
-    gap: 10px;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    display: grid;
-    max-width: 100%;
-    grid-template-columns: repeat(auto-fit, 180px);
-    grid-auto-flow: row;
     margin-bottom: 10px;
     text-align: center;
+    line-height: 1.7;
   }
 
   .game-card {
@@ -147,6 +142,7 @@ input {
     height: 180px;
     border-radius: 35px;
     overflow: hidden;
+    margin: 5px;
     position: relative;
     transition: all 300ms;
     border: 3px solid transparent;
