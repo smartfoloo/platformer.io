@@ -14,3 +14,28 @@ window.onload = function () {
   displayUserXP();
   checkLevelUp();
 };
+
+const editableHeading = document.getElementById('editableHeading');
+const editInput = document.getElementById('editInput');
+const saveButton = document.getElementById('saveButton');
+
+const savedUsername = localStorage.getItem('username');
+if (savedUsername) {
+    editableHeading.textContent = savedUsername;
+    editInput.value = savedUsername;
+}
+
+editableHeading.addEventListener('click', () => {
+    editableHeading.style.display = 'none';
+    editInput.style.display = 'inline-block';
+    editInput.focus();
+});
+
+saveButton.addEventListener('click', () => {
+    const newUsername = editInput.value;
+    editableHeading.textContent = newUsername;
+    editInput.style.display = 'none';
+    editableHeading.style.display = 'block';
+    
+    localStorage.setItem('username', newUsername);
+});
