@@ -17,20 +17,29 @@ if (tabData.icon) {
   document.querySelector('link[rel="icon"]').href = tabData.icon;
 }
 
-function getContrastHex(hexcolor) {
-  hexcolor = hexcolor.replace('#', '');
-  var r = parseInt(hexcolor.substr(0, 2), 16);
-  var g = parseInt(hexcolor.substr(2, 2), 16);
-  var b = parseInt(hexcolor.substr(4, 2), 16);
-  var yiq = (r * 299 + g * 587 + b * 114) / 1000;
-  return yiq >= 128 ? '#1c1c1c' : 'white';
+function startTrackingTime() {
+  var startTime = new Date().getTime();
+  localStorage.setItem("startTime", startTime.toString());
 }
 
-function getColorHex(hexcolor) {
-  hexcolor = hexcolor.replace('#', '');
-  var r = parseInt(hexcolor.substr(0, 2), 16);
-  var g = parseInt(hexcolor.substr(2, 2), 16);
-  var b = parseInt(hexcolor.substr(4, 2), 16);
-  var yiq = (r * 299 + g * 587 + b * 114) / 1000;
-  return yiq >= 128 ? 'white' : 'black';
+function stopTrackingTime() {
+  var startTime = localStorage.getItem("startTime");
+  if (startTime) {
+    var endTime = new Date().getTime();
+    var totalTime = Math.floor((endTime - parseInt(startTime)) / 1000);
+    var xpPerMinute = 20;
+    var totalXP = Math.floor(totalTime / 60) * xpPerMinute;
+    var currentXP = parseInt(localStorage.getItem("userXP")) || 0;
+    localStorage.setItem("userXP", (currentXP + totalXP).toString());
+    localStorage.removeItem("startTime");
+  }
 }
+
+window.onload = function () {
+  startTrackingTime();
+};
+
+window.onunload = function () {
+  stopTrackingTime();
+};
+
