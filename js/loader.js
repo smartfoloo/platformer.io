@@ -40,7 +40,7 @@ if (gameToLoad) {
       const title = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
       gamename.textContent = title;
-      gameframe.src = `https://smartfoloolol.netlify.app/images/${gameToLoad}`;
+      gameframe.src = `https://smartfoloolol.pages.dev/${gameToLoad}`;
 
       loader.style.display = 'flex';
       gameframe.style.display = 'none';
