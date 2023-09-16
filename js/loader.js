@@ -10,13 +10,19 @@ if (gameToLoad) {
   if (gameToLoad === 'taming-io') {
     gameframe.src = 'https://school-homework.com/';
     gamename.textContent = 'Taming.io';
-  if (gameToLoad === 'little-alchemy-2') {
+    gameimage.src = '/images/tamingio.png';
+  } else if (gameToLoad === 'little-alchemy-2') {
     gameframe.src = 'https://littlealchemy2.com';
-  }
-  } else if (gameToLoad === 'dogeminer2') {
-    gameframe.src = '#';
-    gamename.textContent = 'Dogeminer 2';
-    gameimage.style.display = 'none';
+    gamename.textContent = 'Little Alchemy 2';
+    gameimage.src = '/images/littlealchemy2.png';
+  } else if (gameToLoad === 'san-francisco') {
+    gameframe.src = 'https://smartfoloolol.netlify.app/images/san-francisco';
+    gamename.textContent = 'San Francisco';
+    gameimage.src = '/images/sanfrancisco.png';
+  } else if (gameToLoad === 'funny-shooter-2') {
+    gameframe.src = 'https://smartfoloolol.netlify.app/images/funny-shooter-2';
+    gamename.textContent = 'Funny Shooter 2';
+    gameimage.src = '/images/funnyshooter2.png';
   } else {
     const imageName = gameToLoad.replace(/-/g, '');
     const imageSrcPng = `/images/${imageName}.png`;
