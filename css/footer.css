@@ -1,8 +1,8 @@
 .footer {
   background: #393f44;
-  border-radius: 10px;
+  border-radius: 15px;
   color: #fff;
-  margin: 10px;
+  margin: 20px;
   display: flex;
   padding: 10px;
   justify-content: space-between;
@@ -10,44 +10,4 @@
   overflow: hidden;
   flex-wrap: wrap;
   text-align: center;
-}
-
-.footer-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-logo-image {
-  height: 50px;
-  width: 50px;
-  margin-right: 10px;
-}
-
-.footer ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-  margin: 20px;
-}
-
-.footer h1 {
-  font-size: 50px;
-  margin: 20px;
-}
-
-.footer h2 {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.footer h3 {
-  font-weight: 300;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.footer h4 {
-  font-weight: 300;
-  font-size: 18px;
 }

@@ -34,18 +34,17 @@
       <i class="uil uil-times navCloseBtn"></i>
       <li><a href="/index.html"><i class="fa-solid fa-house" style="margin-right: 5px;"></i>Home</a></li>
       <li><a href="/games"><i class="fa-solid fa-gamepad" style="margin-right: 5px;"></i>Games</a></li>
-      <li><a href="/credits.html"><i class="fa-solid fa-users" style="margin-right: 5px;"></i>Credits</a></li>
       <li><a href="/extras.html"><i class="fa-solid fa-circle-plus" style="margin-right: 5px;"></i>Extras</a></li>
       <li><a href="/settings.html"><i class="fa-solid fa-gear" style="margin-right: 5px;"></i>Settings</a></li>
       <li><a href="/profile.html"><i class="fa-solid fa-user" style="margin-right: 5px;"></i></a></li>
     </ul>
   </nav>
   <div class="main-content">
-    <div class="box">
-      <p>Announcement: More games coming soon!</p>
-      <p>Update: Added mobile support, calmer theme</p>
+    <div class="input-div">
+      <input type="text" id="searchInput" placeholder="Search for games...">
+      <button id="randomGameButton">Random Game</button>
     </div>
-    <div class="center">
+    <div class="center" id="gameList">
       <a href="/play.html?game=chicago" target="_parent">
         <div class="game-card">
           <div class="content">
@@ -78,11 +77,21 @@
           <img src="/images/monaco.png" />
         </div>
       </a>
-
     </div>
   </div>
+  <footer class="footer">
+    <p>Copyright Platformer.io 2023</p>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: "en", layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, "google_translate_element");
+      }
+    </script>
+    <script type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </footer>
 </body>
-
+<script src="/js/games.js"></script>
 <script src="/js/index.js"></script>
 <script src='/js/widgetbot.js' async defer>
   new Crate({
