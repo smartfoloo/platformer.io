@@ -1,14 +1,22 @@
 function displayUserXP() {
   var currentXP = parseInt(localStorage.getItem("userXP")) || 0;
-  var currentLevel = parseInt(localStorage.getItem("userLevel")) || 1;
-  document.getElementById("user-XP").textContent = "XP: " + currentXP;
-  document.getElementById("user-Level").textContent = "Level: " + currentLevel;
-
   var xpPerLevel = 200;
-  var xpForNextLevel = xpPerLevel * (currentLevel + 1);
-  var xpProgress = (currentXP / xpForNextLevel) * 100;
+
+  var currentLevel = Math.floor(currentXP / xpPerLevel) + 1;
+  var xpForNextLevel = xpPerLevel * (currentLevel);
+  var xpProgress = ((currentXP % xpPerLevel) / xpPerLevel) * 100;
+
+  document.getElementById("user-Level").textContent = "Level " + currentLevel;
+  document.getElementById("xp-progress").style.width = xpProgress + "%";
+
+  var remainingXP = xpForNextLevel - currentXP;
+  var remainingMessage = `${remainingXP} XP until next levelup`; // Format the message
+
+  document.getElementById("remaining-XP").textContent = remainingMessage;
+
   document.getElementById("xp-progress").style.width = xpProgress + "%";
 }
+
 
 window.onload = function () {
   displayUserXP();
@@ -38,4 +46,15 @@ saveButton.addEventListener('click', () => {
     editableHeading.style.display = 'block';
     
     localStorage.setItem('username', newUsername);
+});
+
+document.getElementById("editIcon").addEventListener("click", function () {
+  var inputDiv = document.querySelector(".input-div");
+  if (inputDiv.style.display === "none" || inputDiv.style.display === "") {
+    inputDiv.style.display = "block";
+    document.getElementById("saveButton").style.display = "block";
+  } else {
+    inputDiv.style.display = "none";
+    document.getElementById("saveButton").style.display = "none";
+  }
 });
