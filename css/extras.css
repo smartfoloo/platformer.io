@@ -26,14 +26,14 @@ h4 {
 }
 
 .main-content {
-  margin-top: 96px;
+  margin-top: 80px;
   text-align: center;
 }
 
 .box {
   background: #27292e;
   border-radius: 15px;
-  margin: 20px;
+  margin: 10px 200px;
   padding: 10px;
   padding-left: 47px;
   padding-right: 47px;
@@ -78,4 +78,16 @@ h4 {
 ::placeholder {
   color: #fff;
   font-size: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+  .box {
+    margin: 10px 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .box {
+    margin: 10px 50px;
+  }
 }

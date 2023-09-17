@@ -16,13 +16,33 @@ if (gameToLoad) {
     gamename.textContent = 'Little Alchemy 2';
     gameimage.src = '/images/littlealchemy2.png';
   } else if (gameToLoad === 'san-francisco') {
-    gameframe.src = 'https://smartfoloolol.netlify.app/images/san-francisco';
+    gameframe.src = 'https://smartfoloolol.netlify.app/assets/san-francisco';
     gamename.textContent = 'San Francisco';
     gameimage.src = '/images/sanfrancisco.png';
   } else if (gameToLoad === 'funny-shooter-2') {
-    gameframe.src = 'https://smartfoloolol.netlify.app/images/funny-shooter-2';
+    gameframe.src = 'https://smartfoloolol.netlify.app/assets/funny-shooter-2';
     gamename.textContent = 'Funny Shooter 2';
     gameimage.src = '/images/funnyshooter2.png';
+  } else if (gameToLoad === 'time-shooter-2') {
+    gameframe.src = 'https://smartfoloolol.netlify.app/assets/time-shoter-2o';
+    gamename.textContent = 'Time Shooter 2';
+    gameimage.src = '/images/timshooter2.png';
+  } else if (gameToLoad === 'time-shooter-3') {
+    gameframe.src = 'https://smartfoloolol.netlify.app/assets/time-shooter-3';
+    gamename.textContent = 'San Francisco';
+    gameimage.src = '/images/sanfrancisco.png';
+  } else if (gameToLoad === 'turbo-moto-racer') {
+    gameframe.src = 'https://smartfoloolol.netlify.app/assets/turbo-moto-racer';
+    gamename.textContent = 'Turbo Moto Racer';
+    gameimage.src = '/images/turbomotoracer.png';
+  } else if (gameToLoad === 'bank-robbery') {
+    gameframe.src = 'https://smartfoloolol.netlify.app/assets/bank-robbery';
+    gamename.textContent = 'Bank Robbery';
+    gameimage.src = '/images/bank-robbery.png';
+  } else if (gameToLoad === 'bank-robbery-2') {
+    gameframe.src = 'https://smartfoloolol.netlify.app/assets/bank-robbery-2';
+    gamename.textContent = 'Bank Robbery 2';
+    gameimage.src = '/images/bankrobbery2.png';
   } else {
     const imageName = gameToLoad.replace(/-/g, '');
     const imageSrcPng = `/images/${imageName}.png`;
