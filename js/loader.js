@@ -38,11 +38,19 @@ if (gameToLoad) {
   } else if (gameToLoad === 'bank-robbery') {
     gameframe.src = 'https://smartfoloolol.netlify.app/assets/bank-robbery';
     gamename.textContent = 'Bank Robbery';
-    gameimage.src = '/images/bank-robbery.png';
+    gameimage.src = '/images/bankrobbery.png';
   } else if (gameToLoad === 'bank-robbery-2') {
     gameframe.src = 'https://smartfoloolol.netlify.app/assets/bank-robbery-2';
     gamename.textContent = 'Bank Robbery 2';
     gameimage.src = '/images/bankrobbery2.png';
+  } else if (gameToLoad === 'squid-shooter') {
+    gameframe.src = 'https://smartfoloolol.netlify.app/assets/squid-shooter';
+    gamename.textContent = 'Squid Shooter';
+    gameimage.src = '/images/squidshooter.png';
+  } else if (gameToLoad === 'zombies-shooter-2') {
+    gameframe.src = 'https://smartfoloolol.netlify.app/assets/zombies-shooter-2';
+    gamename.textContent = 'Zombies Shooter 2';
+    gameimage.src = '/images/zombiesshooter2.png';
   } else {
     const imageName = gameToLoad.replace(/-/g, '');
     const imageSrcPng = `/images/${imageName}.png`;
