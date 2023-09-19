@@ -78,22 +78,6 @@ function setFavicon(icon) {
   localStorage.setItem("tab", JSON.stringify(tabData));
 }
 
-function setCloak() {
-  var cloak = document.getElementById("premadecloaks").value;
-  switch (cloak) {
-    case "search":
-      setTitle("Google");
-      setFavicon("./images/cloaks/Google Search.ico");
-      location.reload();
-      break;
-    case "itchio":
-      setTitle("Top free NSFW games for web");
-      setFavicon("./images/cloaks/D23D344B-4CB0-4799-B525-F4E4F3A36728.ico");
-      location.reload();
-      break;
-    // ... (other cases removed for brevity)
-  }
-}
 
 function resetTab() {
   document.title = settingsDefaultTab.title;
@@ -103,22 +87,21 @@ function resetTab() {
   localStorage.setItem("tab", JSON.stringify({}));
 }
 
-function setTheme(theme) {
-  localStorage.setItem("theme", theme);
-  document.body.setAttribute("theme", theme);
-  document.body.style = "";
-  localStorage.removeItem("theme_color");
+document.addEventListener('DOMContentLoaded', function () {
+  const urlButtons = document.querySelectorAll('.url-button');
 
-  themes.forEach((palette) => {
-    if (palette.theme == theme) {
-      document.querySelector("#theme_color").value = palette.color;
-    }
+  urlButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      urlButtons.forEach(function (btn) {
+        btn.classList.remove('selected-url');
+      });
+
+      this.classList.add('selected-url');
+
+      const selectedUrl = this.getAttribute('data-url');
+      localStorage.setItem('selectedUrl', selectedUrl);
+    });
   });
-}
+});
 
-function setThemeColor(theme) {
-  localStorage.setItem("theme", "custom");
-  localStorage.setItem("theme_color", theme);
-  document.body.setAttribute("theme", "custom");
-  document.body.style = `--theme: ${theme}; --background: ${getContrastHex(theme)}; --text: ${getColorHex(theme)}; --text-secondary: ${getColorHex(theme)};`;
-}
+

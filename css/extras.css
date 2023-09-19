@@ -115,3 +115,32 @@ th {
   }
 }
 
+.url-button {
+  color: #fff;
+  background: #27292e;
+  border: 0px;
+  font-size: 16px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: all 300ms;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px 0px;
+  outline: 1px solid #495057;
+}
+
+.url-button:hover {
+  transform: scale(0.95)
+}
+
+.selected-url {
+  outline: 3px solid #495057;
+}
+
+kbd {
+  font-family: Arial, sans-serif;
+  background-color: #27292e;
+  border: 1px solid #495057;
+  padding: 2px 5px;
+  border-radius: 3px;
+}

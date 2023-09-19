@@ -43,3 +43,15 @@ window.onunload = function () {
   stopTrackingTime();
 };
 
+function handleKeyPress(event) {
+  const selectedUrl = localStorage.getItem('selectedUrl');
+  const defaultUrl = 'https://www.instructure.com/canvas?domain=canvas';
+
+  if (event.code === 'Backquote') {
+    window.location.href = selectedUrl || defaultUrl;
+  }
+}
+
+document.addEventListener('keydown', handleKeyPress);
+
+
