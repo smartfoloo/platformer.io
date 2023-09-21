@@ -55,6 +55,14 @@ if (gameToLoad) {
     gameframe.src = 'https://minerdoge2.netlify.app/play/index.html';
     gamename.textContent = 'Dogeminer 2';
     gameimage.src = '/images/dogeminer2.png';
+  } else if (gameToLoad === 'dogeminer') {
+    gameframe.src = 'https://minerdoge.netlify.app/';
+    gamename.textContent = 'Dogeminer';
+    gameimage.src = '/images/zombiesshooter.png';
+  } else if (gameToLoad === 'karlsont') {
+    gameframe.src = 'https://smartfoloolol.pages.dev/karlsont';
+    gamename.textContent = 'KARLSONT';
+    gameimage.src = '/images/karlsont.png';
   } else {
     const imageName = gameToLoad.replace(/-/g, '');
     const imageSrcPng = `/images/${imageName}.png`;
