@@ -51,6 +51,10 @@ if (gameToLoad) {
     gameframe.src = 'https://smartfoloolol.netlify.app/assets/zombies-shooter-2';
     gamename.textContent = 'Zombies Shooter 2';
     gameimage.src = '/images/zombiesshooter2.png';
+  } else if (gameToLoad === 'dogeminer2') {
+    gameframe.src = 'https://minerdoge2.netlify.app/play/index.html';
+    gamename.textContent = 'Dogeminer 2';
+    gameimage.src = '/images/dogeminer2.png';
   } else {
     const imageName = gameToLoad.replace(/-/g, '');
     const imageSrcPng = `/images/${imageName}.png`;
