@@ -8,13 +8,6 @@ function displayUserXP() {
 
   document.getElementById("user-Level").textContent = "Level " + currentLevel;
   document.getElementById("xp-progress").style.width = xpProgress + "%";
-
-  var remainingXP = xpForNextLevel - currentXP;
-  var remainingMessage = `${remainingXP} XP until next levelup`; // Format the message
-
-  document.getElementById("remaining-XP").textContent = remainingMessage;
-
-  document.getElementById("xp-progress").style.width = xpProgress + "%";
 }
 
 
@@ -33,16 +26,11 @@ if (savedUsername) {
     editInput.value = savedUsername;
 }
 
-editableHeading.addEventListener('click', () => {
-    editableHeading.style.display = 'none';
-    editInput.style.display = 'inline-block';
-    editInput.focus();
-});
-
 saveButton.addEventListener('click', () => {
     const newUsername = editInput.value;
     editableHeading.textContent = newUsername;
     editInput.style.display = 'none';
+    saveButton.style.display = 'none';
     editableHeading.style.display = 'block';
     
     localStorage.setItem('username', newUsername);

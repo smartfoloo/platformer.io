@@ -37,6 +37,7 @@ function stopTrackingTime() {
   if (startTime) {
     var endTime = new Date().getTime();
     var totalTime = Math.floor((endTime - parseInt(startTime)) / 1000);
+    localStorage.setItem("totalTime", totalTime.toString());
     var xpPerMinute = 20;
     var totalXP = Math.floor(totalTime / 60) * xpPerMinute;
     var currentXP = parseInt(localStorage.getItem("userXP")) || 0;

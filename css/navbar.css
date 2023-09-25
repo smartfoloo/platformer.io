@@ -23,6 +23,7 @@ body {
   margin: 10px;
   justify-content: space-between;
   height: 56px;
+  outline: 1px solid #495057;
 }
 .nav,
 .nav .nav-links {
