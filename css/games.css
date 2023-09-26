@@ -2,6 +2,11 @@
   font-family: 'Inter';
 }
 
+h4 {
+  font-weight: 300;
+  font-size: 18px;
+}
+
 .main-content {
   color: #fff;
   margin-top: 80px;
