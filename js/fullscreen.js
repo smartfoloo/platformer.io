@@ -11,6 +11,6 @@ const reqFs = (elem) => {
 };
 
 const fullscreen = () => {
-  const elem = document.getElementsByTagName("iframe")[0];
+  const elem = document.getElementsByClassName("gameframe")[0];
   reqFs(elem);
 };
