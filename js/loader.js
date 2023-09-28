@@ -63,6 +63,10 @@ if (gameToLoad) {
     gameframe.src = 'https://smartfoloolol.pages.dev/karlsont';
     gamename.textContent = 'KARLSONT';
     gameimage.src = '/images/karlsont.png';
+  } else if (gameToLoad === 'airmash') {
+    gameframe.src = 'https://altao.azureedge.net/';
+    gamename.textContent = 'Airmash';
+    gameimage.src = '/images/airmash.png';
   } else {
     const imageName = gameToLoad.replace(/-/g, '');
     const imageSrcPng = `/images/${imageName}.png`;
