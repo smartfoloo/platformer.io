@@ -1,4 +1,3 @@
-const loader = document.getElementById('loader');
 const gameframe = document.querySelector('.gameframe');
 const gamename = document.getElementById('gamename');
 const gameimage = document.querySelector('.game-image');
@@ -92,11 +91,9 @@ if (gameToLoad) {
       gamename.textContent = title;
       gameframe.src = `https://smartfoloolol.pages.dev/${gameToLoad}`;
 
-      loader.style.display = 'flex';
       gameframe.style.display = 'none';
 
       setTimeout(() => {
-        loader.style.display = 'none';
         gameframe.style.display = 'block';
       }, 300);
     }
