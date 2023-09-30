@@ -1,9 +1,11 @@
 const texts = [
-  "Get back to work!",
-  "mrbeast",
-  "Join the Discord!",
+  "get back to work!",
+  "derek is cool",
+  "join the discord!",
   "microsoft tech support here",
-  "idk"
+  "idk",
+  "peppa pig is blocked?",
+  "back in my day i used to walk 29 km to this classroom"
 ];
 
 function getRandomText() {
