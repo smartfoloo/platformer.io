@@ -54,10 +54,10 @@ h4 {
   border: none;
   padding: 15px 20px;
   font-size: 16px;
-  width: 50vw;
+  width: 100%;
   color: #fff;
   text-align: center;
-  margin: 10px;
+  margin: 10px 0px;
   border-radius: 10px;
   text-decoration-style: solid;
   text-decoration-color: #fff;
@@ -75,7 +75,8 @@ h4 {
   border: none;
   padding: 15px 20px;
   font-size: 16px;
-  width: 50vw;
+  width: fit-content;
+  cursor: pointer;
   color: #fff;
   text-align: center;
   margin: 10px;
@@ -84,6 +85,7 @@ h4 {
   text-decoration-color: #fff;
   transition: 300ms;
   outline: 1px solid #495057;
+  align-self: center;
 }
 
 #saveButton:hover {

@@ -34,6 +34,7 @@ saveButton.addEventListener('click', () => {
     editableHeading.style.display = 'block';
     
     localStorage.setItem('username', newUsername);
+    location.reload();
 });
 
 document.getElementById("editIcon").addEventListener("click", function () {

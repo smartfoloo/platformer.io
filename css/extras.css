@@ -23,6 +23,7 @@ h3 {
 h4 {
   font-weight: 300;
   font-size: 18px;
+  line-height: 2;
 }
 
 .main-content {
@@ -143,4 +144,25 @@ kbd {
   border: 1px solid #495057;
   padding: 5px 10px;
   border-radius: 3px;
+}
+
+.extras {
+  list-style-type: none;
+}
+
+ol {
+  text-align: left;
+  margin: 0px 200px;
+}
+
+@media screen and (max-width: 1000px) {
+  ol {
+    margin: 0px 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  ol {
+    margin: 0px 50px;
+  }
 }

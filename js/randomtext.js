@@ -2,8 +2,8 @@ const texts = [
   "get back to work!",
   "derek is cool",
   "join the discord!",
-  "microsoft tech support here",
-  "idk",
+  "we live we love we lie",
+  "welcome to china airline",
   "peppa pig is blocked?",
   "back in my day i used to walk 29 km to this classroom"
 ];
