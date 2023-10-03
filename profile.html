@@ -56,6 +56,9 @@
       </div>
       <h4 style="font-size: 16px;">20xp is earned every minute you play! Each level is 200xp!</h4>
     </div>
+    <div class="box">
+      <h3>Games Played</h3>
+      <h4 id="gameStats"></h4>
     </div>
   </div>
   <footer class="footer">
@@ -71,11 +74,16 @@
 </body>
 <script src="/js/index.js"></script>
 <script src="/js/profile.js"></script>
+<script src="/js/games.js"></script>
 <script src='/js/widgetbot.js' async defer>
   new Crate({
     server: '1100948504177815603', // Pl@tf0rmerio
     channel: '1130968029069586523' // #💬︱chat
   })
+</script>
+<script>
+  var gameStatsElement = document.getElementById("gameStats");
+    gameStatsElement.textContent = displayGameStats();
 </script>
 
 </html>

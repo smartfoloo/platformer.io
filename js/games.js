@@ -27,3 +27,35 @@ searchInput.addEventListener("input", function () {
     gameList.style.gridTemplateColumns = "repeat(auto-fit, 150px)";
   }
 });
+
+
+
+
+function incrementGamesPlayed(gameName) {
+  var gamesPlayed = JSON.parse(localStorage.getItem("gamesPlayed")) || [];
+  if (!gamesPlayed.includes(gameName)) {
+    gamesPlayed.push(gameName);
+    localStorage.setItem("gamesPlayed", JSON.stringify(gamesPlayed));
+  }
+}
+
+function storeTotalGames() {
+  var totalGames = document.querySelectorAll(".game-card").length;
+  localStorage.setItem("totalGames", totalGames);
+}
+
+function displayGameStats() {
+  var gamesPlayed = JSON.parse(localStorage.getItem("gamesPlayed")) || [];
+  var totalGames = localStorage.getItem("totalGames") || 0;
+  return gamesPlayed.length + "/" + totalGames;
+}
+
+var gameCards = document.querySelectorAll(".game-card");
+gameCards.forEach(function (gameCard) {
+  gameCard.addEventListener("click", function () {
+    var gameName = gameCard.querySelector(".title").textContent;
+    incrementGamesPlayed(gameName);
+  });
+});
+
+storeTotalGames();

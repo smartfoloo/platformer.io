@@ -5,6 +5,7 @@ const texts = [
   "we live we love we lie",
   "welcome to china airline",
   "peppa pig is blocked?",
+  "totall",
   "back in my day i used to walk 29 km to this classroom"
 ];
 
