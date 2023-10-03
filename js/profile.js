@@ -47,3 +47,13 @@ document.getElementById("editIcon").addEventListener("click", function () {
     document.getElementById("saveButton").style.display = "none";
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var totalTimeFormatted = localStorage.getItem("totalTime");
+
+  if (totalTimeFormatted) {
+    document.getElementById('totalTime').textContent = totalTimeFormatted;
+  } else {
+    document.getElementById('totalTime').textContent = "No total time found.";
+  }
+});

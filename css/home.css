@@ -42,7 +42,7 @@ h5 {
 }
 
 .play {
-  background: #1cd96a;
+  background: var(--halloween);
   border: 0px;
   font-size: 30px;
   padding: 10px 15px;

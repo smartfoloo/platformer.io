@@ -47,7 +47,7 @@ h4 {
   border: none;
   padding: 15px 20px;
   width: 50vw;
-  color: #1cd96a;
+  color: var(--halloween);
   text-align: center;
   margin: 10px;
   margin-bottom: 30px;
@@ -64,7 +64,7 @@ h4 {
   border: none;
   padding: 15px 20px;
   width: 50vw;
-  color: #1cd96a;
+  color: var(--halloween);
   text-align: center;
   margin: 10px;
   margin-bottom: 30px;

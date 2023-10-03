@@ -26,6 +26,12 @@ h4 {
   line-height: 1.7;
 }
 
+h5 {
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 300;
+}
+
 .main-content {
   margin-top: 80px;
   text-align: center;
@@ -104,7 +110,7 @@ h4 {
 #xp-progress {
   width: 0;
   height: 100%;
-  background-color: #1cd96a;
+  background-color: var(--halloween);
   border-radius: 10px;
 }
 
@@ -142,6 +148,30 @@ h4 {
 
 #editableHeading {
   margin: 10px;
+}
+
+.stat-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-card {
+  width: 40%;
+  background: #32363c;
+  margin: 20px 0px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.stat-card:hover {
+  opacity: 0.7;
+}
+
+.stat-card h4 {
+  font-size: 24px;
 }
 
 @media screen and (max-width: 1000px) {

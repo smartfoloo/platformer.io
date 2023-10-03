@@ -26,15 +26,27 @@ function stopTrackingTime() {
   var startTime = localStorage.getItem("startTime");
   if (startTime) {
     var endTime = new Date().getTime();
-    var totalTime = Math.floor((endTime - parseInt(startTime)) / 1000);
-    localStorage.setItem("totalTime", totalTime.toString());
-    var xpPerMinute = 20;
-    var totalXP = Math.floor(totalTime / 60) * xpPerMinute;
+    var totalTimeInSeconds = Math.floor((endTime - parseInt(startTime)) / 1000);
+
+    var hours = Math.floor(totalTimeInSeconds / 3600);
+    var minutes = Math.floor((totalTimeInSeconds % 3600) / 60);
+    var seconds = totalTimeInSeconds % 60;
+
+    var totalXP = Math.floor(totalTimeInSeconds / 60) * 20;
     var currentXP = parseInt(localStorage.getItem("userXP")) || 0;
     localStorage.setItem("userXP", (currentXP + totalXP).toString());
+
+    var previousTotalTime = localStorage.getItem("totalTimeInSeconds") || 0;
+    var newTotalTime = previousTotalTime + totalTimeInSeconds;
+    localStorage.setItem("totalTimeInSeconds", newTotalTime.toString());
+
+    var totalTimeFormatted = hours + " hours " + minutes + " minutes " + seconds + " seconds";
+    localStorage.setItem("totalTime", totalTimeFormatted);
+
     localStorage.removeItem("startTime");
   }
 }
+
 
 window.onload = function () {
   startTrackingTime();

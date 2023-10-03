@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap');
+
+:root {
+  --default: var(--halloween);
+  --halloween: #eaa133;
+}
 
 * {
   margin: 0;
@@ -34,7 +39,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #1cd96a;
+  color: var(--halloween);
 }
 .nav .logo {
   font-size: 22px;
@@ -130,7 +135,7 @@ a:hover {
 
 select {
   background: #27292e;
-  font-family: 'Montserrat';
+  font-family: 'Inter';
   color: #fff;
   border-radius: 5px;
   padding: 5px;
