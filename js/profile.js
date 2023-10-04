@@ -56,4 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
   } else {
     document.getElementById('totalTime').textContent = "No total time found.";
   }
+
+  const visitCountDisplay = document.getElementById('visit-count-display');
+  const visitCount = localStorage.getItem('visitCount') || 0;
+  visitCountDisplay.textContent = `${visitCount} out of the last 28 days`;
 });
