@@ -67,20 +67,22 @@ function handleKeyPress(event) {
 
 document.addEventListener('keydown', handleKeyPress);
 
-function isWithinLast28Days(date) {
+function isToday(date) {
   const today = new Date();
-  const twentyEightDaysAgo = new Date(today);
-  twentyEightDaysAgo.setDate(today.getDate() - 28);
-  return date >= twentyEightDaysAgo && date <= today;
+  return (
+    date.getDate() === today.getDate() &&
+    date.getMonth() === today.getMonth() &&
+    date.getFullYear() === today.getFullYear()
+  );
 }
 
 function updateUserVisit() {
-  const lastVisitDate = localStorage.getItem('lastVisitDate');
+  const lastVisitDate = new Date(localStorage.getItem('lastVisitDate'));
   const currentDate = new Date();
 
-  if (!lastVisitDate || !isWithinLast28Days(new Date(lastVisitDate))) {
+  if (!isToday(lastVisitDate)) {
     localStorage.setItem('visitCount', '1');
-    localStorage.setItem('lastVisitDate', currentDate.toString());
+    localStorage.setItem('lastVisitDate', currentDate.toISOString());
   } else {
     const visitCount = parseInt(localStorage.getItem('visitCount')) || 0;
     localStorage.setItem('visitCount', (visitCount + 1).toString());
@@ -90,4 +92,5 @@ function updateUserVisit() {
 updateUserVisit();
 
 const visitCount = localStorage.getItem('visitCount') || 0;
+console.log(`Number of visits in the last 28 days: ${visitCount}`);
 
