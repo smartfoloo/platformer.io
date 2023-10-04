@@ -1,22 +1,3 @@
-var tab = localStorage.getItem('tab');
-if (tab) {
-  try {
-    var tabData = JSON.parse(tab);
-  } catch {
-    var tabData = {};
-  }
-} else {
-  var tabData = {};
-}
-
-if (tabData.title) {
-  document.title = tabData.title;
-}
-
-if (tabData.icon) {
-  document.querySelector('link[rel="icon"]').href = tabData.icon;
-}
-
 function displayUserXP() {
   var currentXP = parseInt(localStorage.getItem("userXP")) || 0;
   var xpPerLevel = 200;
@@ -41,19 +22,19 @@ const saveButton = document.getElementById('saveButton');
 
 const savedUsername = localStorage.getItem('username');
 if (savedUsername) {
-    editableHeading.textContent = savedUsername;
-    editInput.value = savedUsername;
+  editableHeading.textContent = savedUsername;
+  editInput.value = savedUsername;
 }
 
 saveButton.addEventListener('click', () => {
-    const newUsername = editInput.value;
-    editableHeading.textContent = newUsername;
-    editInput.style.display = 'none';
-    saveButton.style.display = 'none';
-    editableHeading.style.display = 'block';
-    
-    localStorage.setItem('username', newUsername);
-    location.reload();
+  const newUsername = editInput.value;
+  editableHeading.textContent = newUsername;
+  editInput.style.display = 'none';
+  saveButton.style.display = 'none';
+  editableHeading.style.display = 'block';
+
+  localStorage.setItem('username', newUsername);
+  location.reload();
 });
 
 document.getElementById("editIcon").addEventListener("click", function () {
@@ -65,18 +46,4 @@ document.getElementById("editIcon").addEventListener("click", function () {
     inputDiv.style.display = "none";
     document.getElementById("saveButton").style.display = "none";
   }
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var totalTimeFormatted = localStorage.getItem("totalTime");
-
-  if (totalTimeFormatted) {
-    document.getElementById('totalTime').textContent = totalTimeFormatted;
-  } else {
-    document.getElementById('totalTime').textContent = "No total time found.";
-  }
-
-  const visitCountDisplay = document.getElementById('visit-count-display');
-  const visitCount = localStorage.getItem('visitCount') || 0;
-  visitCountDisplay.textContent = `${visitCount} out of the last 28 days`;
 });
