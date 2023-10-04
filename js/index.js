@@ -67,4 +67,27 @@ function handleKeyPress(event) {
 
 document.addEventListener('keydown', handleKeyPress);
 
+function isWithinLast28Days(date) {
+  const today = new Date();
+  const twentyEightDaysAgo = new Date(today);
+  twentyEightDaysAgo.setDate(today.getDate() - 28);
+  return date >= twentyEightDaysAgo && date <= today;
+}
+
+function updateUserVisit() {
+  const lastVisitDate = localStorage.getItem('lastVisitDate');
+  const currentDate = new Date();
+
+  if (!lastVisitDate || !isWithinLast28Days(new Date(lastVisitDate))) {
+    localStorage.setItem('visitCount', '1');
+    localStorage.setItem('lastVisitDate', currentDate.toString());
+  } else {
+    const visitCount = parseInt(localStorage.getItem('visitCount')) || 0;
+    localStorage.setItem('visitCount', (visitCount + 1).toString());
+  }
+}
+
+updateUserVisit();
+
+const visitCount = localStorage.getItem('visitCount') || 0;
 
