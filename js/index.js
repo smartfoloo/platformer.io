@@ -83,13 +83,23 @@ function updateUserVisit() {
   if (!isToday(lastVisitDate)) {
     localStorage.setItem('visitCount', '1');
     localStorage.setItem('lastVisitDate', currentDate.toISOString());
-  } else {
+  } else if (!localStorage.getItem('visitedToday')) {
     const visitCount = parseInt(localStorage.getItem('visitCount')) || 0;
     localStorage.setItem('visitCount', (visitCount + 1).toString());
+    localStorage.setItem('visitedToday', 'true');
+  }
+}
+\
+function resetVisitedTodayFlag() {
+  const lastVisitDate = new Date(localStorage.getItem('lastVisitDate'));
+  const currentDate = new Date();
+  if (!isToday(lastVisitDate)) {
+    localStorage.removeItem('visitedToday');
   }
 }
 
 updateUserVisit();
+resetVisitedTodayFlag();
 
 const visitCount = localStorage.getItem('visitCount') || 0;
 console.log(`Number of visits in the last 28 days: ${visitCount}`);
