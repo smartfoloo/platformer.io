@@ -47,3 +47,31 @@ document.getElementById("editIcon").addEventListener("click", function () {
     document.getElementById("saveButton").style.display = "none";
   }
 });
+
+const firstVisitDate = localStorage.getItem('firstVisitDate');
+const dateElement = document.getElementById('firstVisitDate');
+
+if (firstVisitDate) {
+  const formattedDate = new Date(firstVisitDate);
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const formattedDateString = formattedDate.toLocaleDateString(undefined, options);
+  dateElement.textContent = formattedDateString;
+} else {
+  dateElement.textContent = 'No visit date found.';
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (localStorage.getItem('pageVisits')) {
+    const pageVisitsCount = parseInt(localStorage.getItem('pageVisits'), 10);
+    const displayElement = document.getElementById('pageVisitsCount');
+    if (displayElement) {
+      displayElement.textContent = `${pageVisitsCount}`;
+    }
+  } else {
+    const displayElement = document.getElementById('pageVisitsCount');
+    if (displayElement) {
+      displayElement.textContent = 'No page visits recorded yet.';
+    }
+  }
+});
+

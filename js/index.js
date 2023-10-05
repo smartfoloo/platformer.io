@@ -55,3 +55,16 @@ function handleKeyPress(event) {
 
 document.addEventListener('keydown', handleKeyPress);
 
+if (!localStorage.getItem('firstVisitDate')) {
+  const currentDate = new Date();
+  localStorage.setItem('firstVisitDate', currentDate.toISOString());
+} else {
+  const firstVisitDate = new Date(localStorage.getItem('firstVisitDate'));
+}
+
+if (localStorage.getItem('pageVisits')) {
+  const pageVisits = parseInt(localStorage.getItem('pageVisits'), 10) + 1;
+  localStorage.setItem('pageVisits', pageVisits.toString());
+} else {
+  localStorage.setItem('pageVisits', '1');
+}
