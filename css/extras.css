@@ -116,9 +116,9 @@ th {
   }
 }
 
-.url-button {
-  color: #fff;
-  background: #27292e;
+button {
+  color: #000;
+  background: var(--halloween);
   border: 0px;
   font-size: 16px;
   padding: 15px 20px;
@@ -130,7 +130,7 @@ th {
   outline: 1px solid #495057;
 }
 
-.url-button:hover {
+button:hover {
   transform: scale(0.95)
 }
 
@@ -139,11 +139,12 @@ th {
 }
 
 kbd {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter';
   background-color: #27292e;
   border: 1px solid #495057;
-  padding: 5px 10px;
-  border-radius: 3px;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 15px;
 }
 
 .extras {
@@ -165,4 +166,33 @@ ol {
   ol {
     margin: 0px 50px;
   }
+}
+
+input {
+  background: #27292e;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  width: 50vw;
+  color: #fff;
+  text-align: center;
+  margin: 10px;
+  border-radius: 10px;
+  text-decoration-style: solid;
+  text-decoration-color: #fff;
+  transition: 300ms;
+  outline: 1px solid #495057;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+.record-key {
+  height: fit-content;
+}
+
+#recordKeyButton {
+  margin-top: 40px;
 }

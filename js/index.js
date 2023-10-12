@@ -47,13 +47,17 @@ window.onunload = function () {
 function handleKeyPress(event) {
   const selectedUrl = localStorage.getItem('selectedUrl');
   const defaultUrl = 'https://www.instructure.com/canvas?domain=canvas';
+  const customKey = localStorage.getItem('selectedKey');
 
-  if (event.code === 'Backquote') {
+  if (event.code === 'Backquote' && customKey) {
+    window.location.href = selectedUrl || defaultUrl;
+  } else if (event.key === customKey) {
     window.location.href = selectedUrl || defaultUrl;
   }
 }
 
 document.addEventListener('keydown', handleKeyPress);
+
 
 if (!localStorage.getItem('firstVisitDate')) {
   const currentDate = new Date();
