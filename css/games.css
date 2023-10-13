@@ -29,7 +29,7 @@ h4 {
 }
 
 input {
-  background: #27292e;
+  background: #1f2228;
   border: none;
   padding: 15px 20px;
   font-size: 16px;
@@ -51,7 +51,7 @@ input {
 
 #randomGameButton {
   color: #fff;
-  background: #27292e;
+  background: #1f2228;
   border: 0px;
   font-size: 16px;
   padding: 15px 20px;
@@ -117,7 +117,7 @@ input {
 .box {
   color: #fff;
   text-align: center;
-  background: #27292e;
+  background: #1f2228;
   padding: 5px;
   margin-left: 10px;
   margin-right: 10px;
@@ -158,7 +158,7 @@ input {
 
 kbd {
   font-family: Arial, sans-serif;
-  background-color: #27292e;
+  background-color: #1f2228;
   border: 1px solid #495057;
   padding: 5px 10px;
   border-radius: 3px;

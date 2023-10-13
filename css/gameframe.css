@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 :root{
-	--proformer: #27292e;
+	--proformer: #1f2228;
 }
 
 * {
@@ -70,7 +70,7 @@ h3 {
 
 .gameframe {
   height: 80vh;
-  border: 3px solid #27292e;
+  border: 3px solid #1f2228;
   overflow: scroll;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -78,7 +78,7 @@ h3 {
 
 .expand {
   border: none;
-  background: #27292e;
+  background: #1f2228;
 }
 .expand-logo {
   transition: transform .5s ease;
@@ -105,7 +105,7 @@ h3 {
 }
 
 .aboutblank {
-  background: #27292e;
+  background: #1f2228;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 50px;
@@ -118,7 +118,7 @@ h3 {
 }
 
 .box-game {
-  background: #27292e;
+  background: #1f2228;
   font-size: 10px;
   margin: 50px 200px;
   padding: 15px;
@@ -155,7 +155,7 @@ h3 {
 #copyButton {
   padding: 15px 20px;
   outline: none;
-  background: #27292e;
+  background: #1f2228;
   border-radius: 10px;
   border: none;
   color: #fff;

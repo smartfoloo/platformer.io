@@ -12,7 +12,10 @@
   font-family: 'Inter';
 }
 body {
-  background: #03131a;
+  background: url(/wallpaper.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   font-weight: 400;
 }
 
@@ -22,7 +25,7 @@ body {
   z-index: 1;
   width: calc(100vw - 20px);
   padding: 15px 200px;
-  background: #27292e;
+  background: #1f2228;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   margin: 10px;
@@ -134,7 +137,7 @@ a:hover {
 }
 
 select {
-  background: #27292e;
+  background: #1f2228;
   font-family: 'Inter';
   color: #fff;
   border-radius: 5px;
@@ -167,6 +170,6 @@ option {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #27292e;
+  background: #1f2228;
   border-radius: 8px;
 }

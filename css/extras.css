@@ -32,7 +32,7 @@ h4 {
 }
 
 .box {
-  background: #27292e;
+  background: #1f2228;
   border-radius: 15px;
   margin: 10px 200px;
   padding: 10px;
@@ -43,7 +43,7 @@ h4 {
 }
 
 #title {
-  background: #27292e;
+  background: #1f2228;
   border: none;
   padding: 15px 20px;
   width: 50vw;
@@ -60,7 +60,7 @@ h4 {
 }
 
 #icon {
-  background: #27292e;
+  background: #1f2228;
   border: none;
   padding: 15px 20px;
   width: 50vw;
@@ -140,7 +140,7 @@ button:hover {
 
 kbd {
   font-family: 'Inter';
-  background-color: #27292e;
+  background-color: #1f2228;
   border: 1px solid #495057;
   padding: 20px;
   font-size: 24px;
@@ -169,7 +169,7 @@ ol {
 }
 
 input {
-  background: #27292e;
+  background: #1f2228;
   border: none;
   padding: 15px 20px;
   font-size: 16px;
