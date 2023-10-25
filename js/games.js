@@ -59,3 +59,34 @@ gameCards.forEach(function (gameCard) {
 });
 
 storeTotalGames();
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var likedGames = JSON.parse(localStorage.getItem('likedGames')) || [];
+  var gameCards = document.querySelectorAll('.game-card');
+
+  likedGames.forEach(function (likedGameLink) {
+    gameCards.forEach(function (card) {
+      var link = card.closest('a').getAttribute('href');
+      if (link === likedGameLink) {
+        addLikedLabel(card);
+      }
+    });
+  });
+});
+
+function addLikedLabel(gameCard) {
+  var likedLabel = document.createElement('label');
+  likedLabel.id = 'liked-game';
+  gameCard.appendChild(likedLabel);
+}
+
+function removeLikedLabel(gameCard) {
+  var likedLabel = gameCard.querySelector('#liked-game');
+  if (likedLabel) {
+    likedLabel.remove();
+  }
+}
+
+
+

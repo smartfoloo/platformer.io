@@ -12,10 +12,7 @@
   font-family: 'Inter';
 }
 body {
-  background: url(/wallpaper.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: #03131a;
   font-weight: 400;
 }
 

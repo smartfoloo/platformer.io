@@ -114,6 +114,24 @@ input {
   display: block;
 }
 
+#liked-game::before {
+  content: "Liked";
+  position: absolute;
+  display: inline-block;
+  height: 15px;
+  padding: 2px 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  background: linear-gradient(to top right, #ff5733, #ff9033);
+  border-radius: 5px;
+  text-transform: uppercase;
+  top: 0;
+  right: 15px;
+  z-index: 9996;
+}
+
 .box {
   color: #fff;
   text-align: center;

@@ -1,5 +1,8 @@
 body {
   color: #fff;
+  background: url(/wallpaper.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .main {
