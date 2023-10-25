@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var likeButton = document.getElementById('likeButton');
   var likedGames = JSON.parse(localStorage.getItem('likedGames')) || [];
   var currentPage = window.location.pathname + window.location.search;
+  if (currentPage.includes('play?')) {
+    currentPage = currentPage.replace('play?', 'play.html?');
+  }
 
   var index = likedGames.indexOf(currentPage);
 
