@@ -85,6 +85,11 @@ input {
   border-color: var(--halloween);
 }
 
+.game-card:active{
+  transform: scale(1);
+  border-color: transparent;
+}
+
 .game-card img {
   width: 100%;
   height: 100%;
