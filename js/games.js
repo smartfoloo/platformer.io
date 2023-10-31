@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function addLikedLabel(gameCard) {
-  var likedLabel = document.createElement('label');
-  likedLabel.id = 'liked-game';
+  var likedLabel = document.createElement('i');
+  likedLabel.className = 'fa-solid fa-star';
   gameCard.appendChild(likedLabel);
 }
 

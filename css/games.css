@@ -119,22 +119,19 @@ input {
   display: block;
 }
 
-#liked-game::before {
-  content: "Liked";
+.fa-star {
   position: absolute;
   display: inline-block;
-  height: 15px;
-  padding: 2px 15px;
-  color: #ffffff;
+  padding: 5px;
+  color: #ffff00;
   text-align: center;
-  font-size: 12px;
-  font-weight: 600;
-  background: linear-gradient(to top right, #ff5733, #ff9033);
-  border-radius: 5px;
-  text-transform: uppercase;
-  top: 0;
-  right: 15px;
+  font-size: 20px;
+  background: #000;
+  border-radius: 16px;
+  top: 8px;
+  right: 8px;
   z-index: 9996;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .box {
