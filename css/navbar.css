@@ -59,11 +59,6 @@ a:hover {
 .nav .nav-links a {
   transition: all 0.2s linear;
 }
-.nav .search-icon {
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-}
 
 .nav .navOpenBtn,
 .nav .navCloseBtn {
@@ -79,6 +74,9 @@ a:hover {
 @media screen and (max-width: 950px) {
   .nav {
     padding: 15px 30px;
+  }
+  .nav #clock {
+    display: none;
   }
 }
 @media screen and (max-width: 600px) {
@@ -162,4 +160,11 @@ option {
 ::-webkit-scrollbar-thumb {
   background: #1f2228;
   border-radius: 8px;
+}
+
+#clock {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
