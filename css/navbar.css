@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap');
 
 :root {
-  --default: var(--halloween);
+  --default: #1cd96a;
   --halloween: #eaa133;
 }
 
@@ -39,7 +39,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: var(--halloween);
+  color: var(--default);
 }
 .nav .logo .logo-image {
   height: 26px;
