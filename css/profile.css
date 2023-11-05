@@ -110,7 +110,7 @@ h5 {
 #xp-progress {
   width: 0;
   height: 100%;
-  background-color: var(--halloween);
+  background-color: var(--default);
   border-radius: 10px;
 }
 

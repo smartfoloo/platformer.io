@@ -72,3 +72,8 @@ if (localStorage.getItem('pageVisits')) {
 } else {
   localStorage.setItem('pageVisits', '1');
 }
+
+function toggleDropdown() {
+  const dropdownContent = document.getElementById('dropdownContent');
+  dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+}
