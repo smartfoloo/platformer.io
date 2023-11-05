@@ -116,7 +116,7 @@ th {
   }
 }
 
-button {
+.main-content button {
   color: #000;
   background: var(--default);
   border: 0px;
@@ -130,7 +130,7 @@ button {
   outline: 1px solid #495057;
 }
 
-button:hover {
+.main-content button:hover {
   transform: scale(0.95)
 }
 
