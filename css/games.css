@@ -117,6 +117,7 @@ input {
 
 .game-card:hover .title {
   display: block;
+  transition: 300ms;
 }
 
 .fa-star {
