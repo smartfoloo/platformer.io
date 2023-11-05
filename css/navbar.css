@@ -172,7 +172,8 @@ option {
 .left {
   gap: 20px;
   display: flex;
-
+  flex-direction: row;
+  align-items: center;
 }
 
 .nav .right-links {
