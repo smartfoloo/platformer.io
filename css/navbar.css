@@ -167,14 +167,14 @@ option {
   transform: translateX(-50%);
 }
 
-.right {
+.nav .right {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
 }
 
-.left {
+.nav .left {
   display: flex;
   align-items: center;
 }
