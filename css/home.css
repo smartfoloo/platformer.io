@@ -1,13 +1,10 @@
 body {
   color: #fff;
-  background: url(/wallpaper.png);
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .main {
   margin-bottom: 10px;
-  margin-top: 80px;
+  margin-top: 65px;
   margin-left: 10px;
   margin-right: 10px;
   padding: 10px 47px;
@@ -63,6 +60,7 @@ h5 {
   margin-right: 10px;
   padding: 10px 47px;
   text-align: center;
+  line-height: 2;
 }
 
 .games a:hover {
@@ -78,21 +76,19 @@ h5 {
 }
 
 .games-grid {
-  gap: 10px;
   align-items: center;
   justify-content: center;
-  display: grid;
+  display: flex;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, 220px);
-  grid-auto-flow: row;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
 .game-card {
-  background: #2e323c;
+  background: #1f2228;
   text-align: center;
   border-radius: 30px;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   width: 220px;
@@ -140,21 +136,19 @@ h5 {
 }
 
 .partners-grid {
-  gap: 10px;
   align-items: center;
   justify-content: center;
-  display: grid;
+  display: flex;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, 220px);
-  grid-auto-flow: row;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
 .partner-card {
-  background: #2e323c;
+  background: #1f2228;
   text-align: center;
   border-radius: 30px;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   width: 220px;
