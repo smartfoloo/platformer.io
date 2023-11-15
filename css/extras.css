@@ -37,11 +37,10 @@ h4 {
   background: transparent;
   border-radius: 15px;
   margin: 10px 200px;
-  padding: 10px;
-  padding-left: 47px;
-  padding-right: 47px;
+  padding: 10px 47px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
+  outline: 1px solid #495057;
 }
 
 #title {
@@ -205,8 +204,4 @@ input {
   flex-wrap: wrap;
   gap: 10px;
   margin: 20px;
-}
-
-.setting {
-  margin: 50px 0px;
 }
