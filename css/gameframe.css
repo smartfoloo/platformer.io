@@ -84,7 +84,7 @@ h3 {
 
 .star {
   border: none;
-  background: #1f2228;
+  background: transparent;
 }
 
 .star-logo {
@@ -99,7 +99,7 @@ h3 {
 
 .expand {
   border: none;
-  background: #1f2228;
+  background: transparent;
 }
 .expand-logo {
   transition: transform .5s ease;
@@ -130,7 +130,7 @@ h3 {
 }
 
 .aboutblank {
-  background: #1f2228;
+  background: transparent;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 50px;
@@ -143,7 +143,7 @@ h3 {
 }
 
 .box-game {
-  background: #1f2228;
+  background: transparent;
   font-size: 10px;
   margin: 50px 200px;
   padding: 15px;
@@ -180,7 +180,7 @@ h3 {
 #copyButton {
   padding: 15px 20px;
   outline: none;
-  background: #1f2228;
+  background: transparent;
   border-radius: 10px;
   border: none;
   color: #fff;

@@ -85,7 +85,7 @@ h5 {
 }
 
 .game-card {
-  background: #1f2228;
+  background: transparent;
   text-align: center;
   border-radius: 30px;
   margin: 20px;
@@ -145,7 +145,7 @@ h5 {
 }
 
 .partner-card {
-  background: #1f2228;
+  background: transparent;
   text-align: center;
   border-radius: 30px;
   margin: 20px;

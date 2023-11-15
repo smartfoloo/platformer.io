@@ -29,7 +29,7 @@ h4 {
 }
 
 input {
-  background: #1f2228;
+  background: transparent;
   border: none;
   padding: 15px 20px;
   font-size: 16px;
@@ -41,7 +41,7 @@ input {
   text-decoration-style: solid;
   text-decoration-color: #fff;
   transition: 500ms;
-  outline: none;
+  outline: 1px solid #495057;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
 }
 
@@ -121,7 +121,7 @@ input {
 .box {
   color: #fff;
   text-align: center;
-  background: #1f2228;
+  background: transparent;
   padding: 5px;
   margin-left: 10px;
   margin-right: 10px;

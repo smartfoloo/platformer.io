@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter';
+  letter-spacing: 0 !important;
 }
 body {
   background: #03131a;
@@ -45,10 +46,12 @@ a:hover {
 }
 .nav .logo {
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
   display: flex;
   align-items: center;
   gap: 5px;
+  transition: 300ms;
 }
 .nav .nav-links {
   column-gap: 20px;
@@ -123,9 +126,9 @@ a:hover {
 }
 
 select {
-  background: #1f2228;
+  background: transparent;
   font-family: 'Inter';
-  color: #fff;
+  color: #000;
   border-radius: 5px;
   padding: 5px;
   outline: none;
@@ -142,13 +145,12 @@ select:focus {
 
 option {
   font-family: 'Inter';
-  color: #fff;
+  color: #000;
   padding: 5px;
 }
 
 ::-webkit-scrollbar {
-  width: 0.6rem;
-  height: 0.5rem;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {

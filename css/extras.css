@@ -2,7 +2,9 @@ body {
   color: #fff;
 }
 
-
+a {
+  transition: 300ms;
+}
 
 h1 {
   font-size: 50px;
@@ -32,7 +34,7 @@ h4 {
 }
 
 .box {
-  background: #1f2228;
+  background: transparent;
   border-radius: 15px;
   margin: 10px 200px;
   padding: 10px;
@@ -43,7 +45,7 @@ h4 {
 }
 
 #title {
-  background: #1f2228;
+  background: transparent;
   border: none;
   padding: 15px 20px;
   width: 50vw;
@@ -60,7 +62,7 @@ h4 {
 }
 
 #icon {
-  background: #1f2228;
+  background: transparent;
   border: none;
   padding: 15px 20px;
   width: 50vw;
@@ -169,7 +171,7 @@ ol {
 }
 
 input {
-  background: #1f2228;
+  background: transparent;
   border: none;
   padding: 15px 20px;
   font-size: 16px;
@@ -195,4 +197,16 @@ input {
 
 #recordKeyButton {
   margin-top: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px;
+}
+
+.setting {
+  margin: 50px 0px;
 }

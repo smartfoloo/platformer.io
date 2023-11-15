@@ -1,8 +1,6 @@
 .footer {
-  background: #1f2228;
-  border-radius: 15px;
-  color: #fff;
-  margin: 10px 200px;
+  background: var(--default);
+  color: #000;
   display: flex;
   padding: 10px;
   justify-content: space-between;
@@ -10,16 +8,4 @@
   overflow: hidden;
   flex-wrap: wrap;
   text-align: center;
-}
-
-@media screen and (max-width: 1000px) {
-  .footer {
-    margin: 10px 100px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .footer {
-    margin: 10px 50px;
-  }
 }
