@@ -3,41 +3,37 @@ $(document).ready(function(){
   var playlist = [{
       title:"Scarlet Fire",
       artist:"Otis McDonald",
-      mp3:"/js/music.mp3",
-      oga:"/js/music.ogg",
+      mp3:"./music/music.mp3",
       poster: "https://th.bing.com/th/id/R.907605c7d81e0d8524dd7de59a759b2f?rik=PUPEcwRoWtL%2fng&riu=http%3a%2f%2fwww.iwardrobes.co.uk%2fwp-content%2fuploads%2f2015%2f09%2fClassic_Black_RAL_9005_Lacobel.png&ehk=oJmsuYt71KXoj4eI0DKX7J81AWrMm%2fcIVMd6h1KvuBM%3d&risl=&pid=ImgRaw&r=0"
     },{
       title:"Loud Indian Music",
       artist:"Classical Indians",
-      mp3:"/js/indian.ogg",
-      oga:"/js/indian.ogg",
+      mp3:"./music/indian.mp3",
       poster: "https://th.bing.com/th/id/R.907605c7d81e0d8524dd7de59a759b2f?rik=PUPEcwRoWtL%2fng&riu=http%3a%2f%2fwww.iwardrobes.co.uk%2fwp-content%2fuploads%2f2015%2f09%2fClassic_Black_RAL_9005_Lacobel.png&ehk=oJmsuYt71KXoj4eI0DKX7J81AWrMm%2fcIVMd6h1KvuBM%3d&risl=&pid=ImgRaw&r=0"
     },{
       title:"We Live We Love We Lie",
       artist:"Smurf Cat",
-      mp3: "/js/cat.mp3",
-      oga: "/js/cat.ogg",
+      mp3: "./music/cat.mp3",
       poster: "https://th.bing.com/th/id/R.907605c7d81e0d8524dd7de59a759b2f?rik=PUPEcwRoWtL%2fng&riu=http%3a%2f%2fwww.iwardrobes.co.uk%2fwp-content%2fuploads%2f2015%2f09%2fClassic_Black_RAL_9005_Lacobel.png&ehk=oJmsuYt71KXoj4eI0DKX7J81AWrMm%2fcIVMd6h1KvuBM%3d&risl=&pid=ImgRaw&r=0"
     },{
       title:"Celebrate our Differences",
       artist:"Various Artists",
-      mp3: "/js/difference.mp3",
-      oga: "/js/difference.ogg",
+      mp3: "./music/difference.mp3",
       poster: "https://th.bing.com/th/id/R.907605c7d81e0d8524dd7de59a759b2f?rik=PUPEcwRoWtL%2fng&riu=http%3a%2f%2fwww.iwardrobes.co.uk%2fwp-content%2fuploads%2f2015%2f09%2fClassic_Black_RAL_9005_Lacobel.png&ehk=oJmsuYt71KXoj4eI0DKX7J81AWrMm%2fcIVMd6h1KvuBM%3d&risl=&pid=ImgRaw&r=0"
     },{
       title:"Bad Habit",
       artist:"Steve Lacy",
-      mp3: "/js/bhabit.mp3",
+      mp3: "./music/bhabit.mp3",
       poster: "https://th.bing.com/th/id/R.907605c7d81e0d8524dd7de59a759b2f?rik=PUPEcwRoWtL%2fng&riu=http%3a%2f%2fwww.iwardrobes.co.uk%2fwp-content%2fuploads%2f2015%2f09%2fClassic_Black_RAL_9005_Lacobel.png&ehk=oJmsuYt71KXoj4eI0DKX7J81AWrMm%2fcIVMd6h1KvuBM%3d&risl=&pid=ImgRaw&r=0"
     },{
       title:"It Girl",
       artist:"Aliyah's Interlude",
-      mp3: "/js/itgirl.mp3",
+      mp3: "./music/itgirl.mp3",
       poster: "https://th.bing.com/th/id/R.907605c7d81e0d8524dd7de59a759b2f?rik=PUPEcwRoWtL%2fng&riu=http%3a%2f%2fwww.iwardrobes.co.uk%2fwp-content%2fuploads%2f2015%2f09%2fClassic_Black_RAL_9005_Lacobel.png&ehk=oJmsuYt71KXoj4eI0DKX7J81AWrMm%2fcIVMd6h1KvuBM%3d&risl=&pid=ImgRaw&r=0"
     },{
       title:"Ballin'",
       artist:"Roddy Rich, Mustard",
-      mp3: "/js/ballin.mp3",
+      mp3: "./music/ballin.mp3",
       poster: "https://th.bing.com/th/id/R.907605c7d81e0d8524dd7de59a759b2f?rik=PUPEcwRoWtL%2fng&riu=http%3a%2f%2fwww.iwardrobes.co.uk%2fwp-content%2fuploads%2f2015%2f09%2fClassic_Black_RAL_9005_Lacobel.png&ehk=oJmsuYt71KXoj4eI0DKX7J81AWrMm%2fcIVMd6h1KvuBM%3d&risl=&pid=ImgRaw&r=0"
   }];
   
