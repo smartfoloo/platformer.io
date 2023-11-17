@@ -1,37 +1,63 @@
 <html>
 
 <head>
-  <style>
-    body,
-    html,
-    iframe {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      overflow: hidden
-    }
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2W1BSNMG9"></script>
+  <title>Platformer.io</title>
+  <link rel="icon" href="/favicon.png">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    .forceIosScrolling {
-      overflow: scroll;
-      -webkit-overflow-scrolling: touch
-    }
-  </style>
-  <script
-    src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.AOzoyjtjrhQ.O/m=gapi_rpc/rt=j/sv=1/d=1/ed=1/rs=AHpOoo9-fA1P7IZFa1fdRj158NoDqrnbYA/cb=gapi.loaded_0?le=scs"
-    async=""></script>
-  <script src="https://apis.google.com/js/api.js?checkCookie=1" gapi_processed="true"></script>
+    gtag('config', 'G-Y2W1BSNMG9');
+  </script>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 </head>
 
 <body>
-  <iframe id="innerFrame" name="innerFrame"
-    sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-storage-access-by-user-activation"
-    frameborder="0" allowfullscreen="" src="https://demo.emulatorjs.org/" style="overflow: auto;">
-  </iframe>
-
-  <script>function loadGapi() { var loaderScript = document.createElement('script'); loaderScript.setAttribute('src', 'https://apis.google.com/js/api.js?checkCookie=1'); loaderScript.onload = function () { this.onload = function () { }; loadGapiClient(); }; loaderScript.onreadystatechange = function () { if (this.readyState === 'complete') { this.onload(); } }; (document.head || document.body || document.documentElement).appendChild(loaderScript); } function updateInnerFrame(url, enableInteraction, forceIosScrolling) { var urlEl = document.createElement('a'); urlEl.setAttribute('href', url); if (urlEl.protocol != "https:" && urlEl.protocol != "http:") { return; } var iframe = document.getElementById('innerFrame'); iframe.src = url; iframe.onload = function () { gapi.rpc.call('..', 'innerFrameLoaded'); }; if (enableInteraction) { if (forceIosScrolling) { var iframeParent = iframe.parentElement; iframeParent.classList.add('forceIosScrolling'); } else { iframe.style.overflow = 'auto'; } } else { iframe.style.pointerEvents = 'none'; } } function updateInnerIframeCode(userCode, enableInteraction, forceIosScrolling) { gapi.rpc.setup('innerFrame'); gapi.rpc.call('innerFrame', 'updateUserHtmlFrame', undefined, userCode, enableInteraction, forceIosScrolling); } function onPostMessage(ev) { if (ev.data['magic'] != 'SHIC') { return; } var type = ev.data['type']; switch (type) { case 'resize': var height = ev.data['height']; gapi.rpc.call('..', 'resize', undefined, height); } } function onGapiInitialized() { gapi.rpc.call('..', 'gapiInitialized'); gapi.rpc.register('updateInnerFrame', updateInnerFrame); gapi.rpc.register('updateInnerIframeCode', updateInnerIframeCode); window.addEventListener('message', onPostMessage); } function loadGapiClient() { gapi.load('gapi.rpc', onGapiInitialized); } if (document.readyState == 'complete') { loadGapi(); } else { self.addEventListener('load', loadGapi); }</script>
-
-
+  <nav class="nav">
+    <div class="right">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a href="/index.html" class="logo">
+        <img src="/favicon.png" class="logo-image">
+        Platformer.io
+      </a>
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li><a href="/index.html"><i class="fa-solid fa-house" style="margin-right: 5px;"></i>Home</a></li>
+        <li><a href="/games"><i class="fa-solid fa-gamepad" style="margin-right: 5px;"></i>Games</a></li>
+        <li><a href="/extras"><i class="fa-solid fa-circle-plus" style="margin-right: 5px;"></i>Extras</a></li>
+        <li><a href="/settings.html"><i class="fa-solid fa-gear" style="margin-right: 5px;"></i>Settings</a></li>
+        <li><a href="/profile.html"><i class="fa-solid fa-user" style="margin-right: 5px;"></i>Profile</a></li>
+      </ul>
+    </div>
+    <div class="left">
+      <div id="clock" class="clock hidden" onload="showTime()"></div>
+    </div>
+  </nav>
+  <div class="main-content">
+    <iframe src="https://smartfoloo-emulatorjs.onrender.com" style="width: 100vw; height: calc(100vh - 65px); margin-top: 65px; border: none;"></iframe>
+  </div>
+  <footer class="footer">
+    <p>Copyright Platformer.io 2023</p>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: "en", layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, "google_translate_element");
+      }
+    </script>
+    <script type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </footer>
 </body>
+<script src="/js/index.js"></script>
+<script src="/js/navbar.js"></script>
 
 </html>
