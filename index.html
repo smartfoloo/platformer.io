@@ -28,6 +28,57 @@
 </head>
 
 <body>
+   <!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>musicplayer-made by hotmayonaise</title>
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/demo.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+   </head>
+   <body >
+              <main id="musicplayer" class="cd__main" style="position: absolute; ">
+                <div class="music-player">
+          <div class="info">
+            <h1 id="musicplayerheader" class="marquee">
+              <span class="italicspan">
+                <!--  <p style="color:#1cd96a"id="marqueetext"class="italic">when i met you in the summer</p> -->
+              </span>
+          </h1>
+            <div class="left">
+              <a href="javascript:;" class="icon-"></i></a>
+              <!--<a href="javascript:;" class="icon-heart"><i style="color:white"class="fa-regular fa-heart"></i></a> -->
+            </div>
+            <div class="center">
+              <div class="jp-playlist">
+                <ul>
+                  <li>d</li>
+                </ul>
+              </div> 
+            </div>
+            <div class="right">
+              <!--<a href="javascript:;" class="icon-"></a>-->
+              <!--<a id="sharelink" href="javascript:void(0);" class="icon-share"><i style="color:white"class="fa-solid fa-share"></i></a> -->
+            </div>
+            <div class="progress"></div>
+          </div>
+          <div class="controls">
+            <div class="current jp-current-time">00:00</div>
+            <div class="play-controls">
+              <a href="javascript:;" class="icon-previous jp-previous" title="previous"><i style="color:white"class="fa-solid fa-backward"></i></a>
+              <a id="play" href="javascript:;" class="icon-play jp-play" title="play"><i style="color:white"class="fa-solid fa-play"></i></a>
+              <a id="pause" href="javascript:;" class="icon-pause jp-pause" title="pause"><i style="color:white"class="fa-solid fa-pause"></i></a>
+              <a href="javascript:;" class="icon-next jp-next" title="next"><i style="color:white"class="fa-solid fa-forward"></i></a>
+            </div>
+            <div class="volume-level">
+            </div>
+          </div>
+          <div id="jquery_jplayer" class="jp-jplayer"></div>
+        </div>
+            </main>
    <nav class="nav">
       <div class="right">
          <i class="uil uil-bars navOpenBtn"></i>
@@ -175,6 +226,7 @@
 </body>
 
 <script src="/js/index.js"></script>
+<script src="/js/music.js"></script>
     <script>
       dragElement(document.getElementById("musicplayer"));
       
