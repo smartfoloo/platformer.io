@@ -216,15 +216,11 @@
 }
 
 
-/* Respect user preferences about animations */
 
 @media (prefers-reduced-motion: reduce) {
   .marquee span {
     animation-iteration-count: 1;
     animation-duration: 0.01; 
-    /* instead of animation: none, so an animationend event is 
-     * still available, if previously attached.
-     */
     width: auto;
     padding-left: 0;
   }
