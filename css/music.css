@@ -5,20 +5,10 @@
   /*madebyhotmayonaise*/
 }
 
-html {
-  min-height: 100%;
-}
 
 .cd__main{
    display: block !important;
    font-family: 'Inter', sans-serif;
-}
-
-body {
-  background: #eee url("//i.imgur.com/82fLDu4.jpg") no-repeat center;
-  background-size: cover;
-  position: absolute;
-
 }
 
 .music-player {
