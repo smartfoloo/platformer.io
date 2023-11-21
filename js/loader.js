@@ -66,6 +66,10 @@ if (gameToLoad) {
     gameframe.src = 'https://altao.azureedge.net/';
     gamename.textContent = 'Airmash';
     gameimage.src = '/images/airmash.png';
+  } else if (gameToLoad === 'yohoho-io') {
+    gameframe.src = 'https://nearpod-currentlyconnectedtolesson.onrender.com/assets/yohoho/index.html';
+    gamename.textContent = 'Yohoho.io';
+    gameimage.src = '/images/yohohoio.avif';
   } else {
     const imageName = gameToLoad.replace(/-/g, '');
     const imageSrcPng = `/images/${imageName}.png`;
