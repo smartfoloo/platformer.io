@@ -4,14 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/music.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/navbar.css" type="text/css"/>
+    
     <title>Music Player</title>
   </head>
   <body>
-    <div class="main-container">
+    <nav class="nav">
+        <div class="right">
+           <i class="uil uil-bars navOpenBtn"></i>
+           <a href="/index.html" class="logo">
+              <img src="/favicon.png" class="logo-image">
+              Platformer.io
+           </a>
+           <ul class="nav-links">
+              <i class="uil uil-times navCloseBtn"></i>
+              <li><a href="/index.html"><i class="fa-solid fa-house" style="margin-right: 5px;"></i>Home</a></li>
+              <li><a href="/games"><i class="fa-solid fa-gamepad" style="margin-right: 5px;"></i>Games</a></li>
+              <li><a href="/extras"><i class="fa-solid fa-circle-plus" style="margin-right: 5px;"></i>Extras</a></li>
+              <li><a href="/settings.html"><i class="fa-solid fa-gear" style="margin-right: 5px;"></i>Settings</a></li>
+              <li><a href="/profile.html"><i class="fa-solid fa-user" style="margin-right: 5px;"></i>Profile</a></li>
+           </ul>
+        </div>
+        <div class="left">
+           <div id="clock" class="clock hidden" onload="showTime()"></div>
+        </div>
+     </nav>
+    <div class="main-container" style="margin-top:100px;">
       <div class="main-content">
-        <h1 id="greeting"></h1>
+        <h1 id="greeting"style="margin-top:50px;"></h1>
         <h2>Playlists</h2>
         <div class="playlist-container">
           <div class="playlist-card" data-playlist="liked-songs">
