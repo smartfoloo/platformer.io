@@ -35,9 +35,12 @@
            <div id="clock" class="clock hidden" onload="showTime()"></div>
         </div>
      </nav>
+     
     <div class="main-container" style="margin-top:100px;">
-      <div class="main-content">
-        <h1 id="greeting"style="margin-top:0px;"></h1>
+    <div class="main-content">
+        <div class="searchbarbg"><input type="text"id="searcher"class="searchbar"placeholder="search for songs..." onkeyup="searchFunc()"> </div>
+        <h1 id="greeting"style="margin-top:50px; font-size:50px;"></h1>
+        
         <h2>Playlists</h2>
         <div class="playlist-container">
           <div class="playlist-card" data-playlist="liked-songs">
