@@ -16,9 +16,8 @@ const savedUsername = localStorage.getItem('username');
 
 
 var text = greeting+" "+savedUsername
-if (greeting==null){
-    greetingElement.textContent = greeting;
+if (savedUsername==null){
+    greetingElement.textContent = greeting+" "+"Gamer";
 } else{
     greetingElement.textContent = text;
-
 }

@@ -179,6 +179,13 @@ input.searchbar:hover{
   height: 140px;
   border-radius: 10px;
 }
+#cover{
+    border-radius:10px;
+    width:45px;
+    height:45px;
+    overflow:hidden;
+    background-image:cover;
+}
 
 .main-content {
   margin: 15px;
