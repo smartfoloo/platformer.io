@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			playSong();
             navigator.mediaSession.metadata = new MediaMetadata({
                 title: selectedSong.replace(/-/g, " "),
-                artist: "Platformer.io Music",
+                artist: "Groovy",
                 artwork: [
                   {
                     src: cover.src,
