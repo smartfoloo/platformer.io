@@ -106,6 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		audio.pause();
         navigator.mediaSession.playbackState = "paused";
 	}
+    
 
 	playBtn.addEventListener('click', () => {
 		const isPlaying = musicContainer.classList.contains('play');
@@ -233,7 +234,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			likeBtn.innerHTML = '<i class="far fa-heart"></i>';
 		}
 	}
-
 	function updateLikedSongs() {
 		if (isLiked) {
 			if (!playlists['liked-songs'].includes(currentPlaylist[songIndex])) {
@@ -261,7 +261,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		return 'Unknown Playlist';
 	}
 
-	// Function to shuffle the current playlist
 	function shufflePlaylist() {
 		for (let i = currentPlaylist.length - 1; i > 0; i--) {
 			const j = Math.floor(Math.random() * (i + 1));
@@ -289,5 +288,31 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		}
 	});
+    
+        const loopBtn = document.getElementById('loop');
+        let isLooping = false;
+    
+        loopBtn.addEventListener('click', () => {
+            isLooping = !isLooping;
+            updateLoopButton();
+        });
+    
+        function updateLoopButton() {
+            if (isLooping) {
+                loopBtn.style.color = "#FFFFFF"; ;
+            } else {
+                loopBtn.style.color = "#1cd96a"; 
+            }
+        }
+        audio.addEventListener('ended', () => {
+            if (isLooping) {
+                loadSong(songIndex);
+                playSong();
+            } else {
+                songIndex = (songIndex + 1) % currentPlaylist.length;
+                loadSong(songIndex);
+                playSong();
+            }
+        });
 });
 
