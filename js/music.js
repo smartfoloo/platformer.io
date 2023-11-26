@@ -74,6 +74,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			// Play the song (if needed)
 			playSong();
+            navigator.mediaSession.metadata = new MediaMetadata({
+                title: selectedSong.replace(/-/g, " "),
+                artist: "Platformer.io Music",
+                artwork: [
+                  {
+                    src: cover.src,
+                    sizes: "140x140",
+                    type: "image/jpeg",
+                  },
+                ],
+              });
 		} else {
 			console.error('Invalid song index or playlist');
 		}
@@ -85,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		playBtn.querySelector('i.fas').classList.remove('fa-play');
 		playBtn.querySelector('i.fas').classList.add('fa-pause');
 		audio.play();
+        navigator.mediaSession.playbackState = "playing";
 	}
 
 	function pauseSong() {
@@ -92,12 +104,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		playBtn.querySelector('i.fas').classList.add('fa-play');
 		playBtn.querySelector('i.fas').classList.remove('fa-pause');
 		audio.pause();
+        navigator.mediaSession.playbackState = "paused";
 	}
 
 	playBtn.addEventListener('click', () => {
 		const isPlaying = musicContainer.classList.contains('play');
 		if (isPlaying) {
 			pauseSong();
+            
 		} else {
 			playSong();
 		}
