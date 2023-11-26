@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		'lofi-jazz': ['circus', 'that-kyoto-vibe', 'brazilian-beach-rumba', 'kyoto-nights', 'cactus-cafe', 'coffee-moments', 'jazz-in-my-coffee', 'sushi'],
 		'seasonal': ['mariahcarey','snowman'],
 		'mix': ['paint-the-town-red','somebody-that-i-used-to-know','somebodys-watching-me',"ballin'",'bad-habit','luxury','everybody-wants-to-rule-the-world','the-box','the-perfect-girl'],
-        'rap':['all-girls-are-the-same']
+        'rap':['all-girls-are-the-same','the-box',"ballin'"]
 	};
 
 	let currentPlaylist = [];
@@ -81,7 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 artwork: [
                   {
                     src: cover.src,
-                    sizes: "140x140",
+                    sizes: "300x300",
+                    type: "image/jpeg",
+                    src: cover.src,
+                    sizes: "2000x2000",
                     type: "image/jpeg",
                   },
                 ],
