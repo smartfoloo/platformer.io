@@ -34,7 +34,7 @@
               <img src="/favicon.png" class="logo-image">
               Platformer.io
            </a>
-           <ul class="nav-links">
+           <ul class="nav-links" style="z-index:10;">
               <i class="uil uil-times navCloseBtn"></i>
               <li><a href="/index.html"><i class="fa-solid fa-house" style="margin-right: 5px;"></i>Home</a></li>
               <li><a href="/games"><i class="fa-solid fa-gamepad" style="margin-right: 5px;"></i>Games</a></li>
@@ -44,10 +44,13 @@
               <li><a href="/profile.html"><i class="fa-solid fa-user" style="margin-right: 5px;"></i>Profile</a></li>
            </ul>
         </div>
-        <div class="left">
-           <div id="clock" class="clock hidden" onload="showTime()"></div>
+        <div class="left" >
+           <div id="clock" class="clock hidden" onload="showTime()" style="z-index:11;"></div>
         </div>
      </nav>
+     <iframe src="https://smartfoloo-music-player.pages.dev" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:9;">
+        Your browser doesn't support iframes
+    </iframe>
      <script src="/js/toggle.js"></script>
 </body>
 </html>
