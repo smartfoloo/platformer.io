@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	let queue = [];
 	let isLiked = false;
 
+	
+
 	playlistCards.forEach(card => {
 		card.addEventListener('click', () => {
 			const playlistName = card.getAttribute('data-playlist');
