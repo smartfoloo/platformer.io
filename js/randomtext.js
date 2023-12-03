@@ -8,7 +8,7 @@ const texts = [
   "you can flex your time in profile ",
   "get back to work, blud",
   "https://youtu.be/dQw4w9WgXcQ DONT CLICK!!!",
-  "whipping noises intensifies ",
+  "make ur own platformer link in out github repo",
   "theres an emulator in extras 🤯",
   "change your nickname in profile",
   "nobody ever reads these :sigh:",

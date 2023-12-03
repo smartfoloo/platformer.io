@@ -190,12 +190,7 @@ h5 {
 
 .social {
   border-radius: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 10px;
-  padding-left: 47px;
-  padding-right: 47px;
+  padding: 10px 47px;
   text-align: center;
 }
 
@@ -257,6 +252,10 @@ h5 {
 
 .social-icons .fa-twitter {
   background-color: #1da1f3;
+}
+
+.social-icons .fa-github {
+  background-color: #000;
 }
 
 @media screen and (max-width: 1000px) {
