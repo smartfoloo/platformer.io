@@ -2,6 +2,7 @@ var allowedDomains = [
   "https://platformerdotio.co",
   "https://platformerdotio.netlify.app",
   "https://platformerdotio.onrender.com",
+  "https://classroomrelay.pages.dev",
 ];
 
 var referringUrl = document.referrer;
