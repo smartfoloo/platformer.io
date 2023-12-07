@@ -1,6 +1,6 @@
 function registerServiceWorker() {
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js', { scope: '/' }).then(() => {
+    navigator.serviceWorker.register('/js/sw.js', { scope: '/' }).then(() => {
       print("registarred");
 
     }).catch(error => {
