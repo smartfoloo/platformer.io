@@ -12,6 +12,7 @@ const texts = [
   "theres an emulator in extras 🤯",
   "change your nickname in profile",
   "nobody ever reads these :sigh:",
+  "hello from dill ehehehhe",
 ];
 
 function getRandomText() {
