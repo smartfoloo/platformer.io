@@ -49,3 +49,11 @@ h4 {
     margin: 10px 50px;
   }
 }
+
+b {
+  color: var(--default)
+}
+
+p {
+  line-height: 2;
+}
