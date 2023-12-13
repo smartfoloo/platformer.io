@@ -93,7 +93,7 @@ if (gameToLoad) {
       const title = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
       gamename.textContent = title;
-      gameframe.src = `https://smartfoloolol.pages.dev/${gameToLoad}`;
+      gameframe.src = `https://smartfoloosanta.pages.dev/${gameToLoad}`;
 
       gameframe.style.display = 'none';
 
