@@ -13,7 +13,7 @@
   letter-spacing: 0 !important;
 }
 body {
-  background: #03131a;
+  background: #121212;
   font-weight: 400;
 }
 
@@ -23,10 +23,9 @@ body {
   z-index: 999999;
   width: 100%;
   padding: 15px 50px;
-  background: #03131a;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background: #121212;
   justify-content: space-between;
-  height: 65px;
+  height: 70px;
 }
 .nav,
 .nav .nav-links {
@@ -37,7 +36,7 @@ a {
   color: #fff;
   text-decoration: none;
 }
-a:hover {
+.nav-links a:hover {
   color: var(--default);
 }
 .nav .logo .logo-image {
@@ -59,6 +58,26 @@ a:hover {
 }
 .nav .nav-links a {
   transition: all 0.2s linear;
+}
+
+.nav .left {
+  display: flex;
+  gap: 15px;
+}
+
+.nav .nav-big-btn {
+  height: 48px;
+  width: 48px;
+  border: none;
+  background: #1b1b1b;
+  font-size: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.nav .nav-big-btn:hover {
+  background: #252525;
 }
 
 .nav .navOpenBtn,
@@ -98,7 +117,7 @@ a:hover {
     padding-top: 100px;
     row-gap: 30px;
     flex-direction: column;
-    background-color: #03131a;
+    background-color: #121212;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
     z-index: 100;
@@ -128,7 +147,7 @@ a:hover {
 select {
   background: transparent;
   font-family: 'Inter';
-  color: #000;
+  color: #fff;
   border-radius: 5px;
   padding: 5px;
   outline: none;
@@ -145,7 +164,7 @@ select:focus {
 
 option {
   font-family: 'Inter';
-  color: #000;
+  color: #fff;
   padding: 5px;
 }
 
@@ -154,7 +173,7 @@ option {
 }
 
 ::-webkit-scrollbar-track {
-  background: #03131a;
+  background: #121212;
 }
 
 ::-webkit-scrollbar-thumb {

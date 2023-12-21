@@ -34,13 +34,12 @@ h4 {
 }
 
 .box {
-  background: transparent;
+  background: #1b1b1b;
   border-radius: 15px;
   margin: 10px 200px;
   padding: 10px 47px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
-  outline: 1px solid #495057;
 }
 
 #title {
@@ -117,9 +116,9 @@ th {
   }
 }
 
-button {
-  color: #000;
-  background: var(--default);
+.main-content button {
+  color: #fff;
+  background: #1b1b1b;
   border: 0px;
   font-size: 16px;
   padding: 15px 20px;
@@ -128,10 +127,9 @@ button {
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   margin: 10px 0px;
-  outline: 1px solid #495057;
 }
 
-button:hover {
+.main-content button:hover {
   transform: scale(0.95)
 }
 
@@ -141,8 +139,7 @@ button:hover {
 
 kbd {
   font-family: 'Inter';
-  background-color: #1f2228;
-  border: 1px solid #495057;
+  background-color: #252525;
   padding: 20px;
   font-size: 24px;
   border-radius: 15px;
@@ -183,6 +180,10 @@ input {
   text-decoration-color: #fff;
   transition: 300ms;
   outline: 1px solid #495057;
+}
+
+.box button {
+  background: #252525;
 }
 
 ::placeholder {

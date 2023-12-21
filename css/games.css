@@ -29,7 +29,7 @@ h4 {
 }
 
 input {
-  background: transparent;
+  background: #1b1b1b;
   border: none;
   padding: 15px 20px;
   font-size: 16px;
@@ -42,8 +42,11 @@ input {
   text-decoration-style: solid;
   text-decoration-color: #fff;
   transition: 500ms;
-  outline: 1px solid #495057;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+input:hover {
+  background: #252525;
 }
 
 ::placeholder {
@@ -87,6 +90,7 @@ input {
   padding-bottom: 3px;
   height: auto;
   bottom: 0;
+  opacity: 0;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
 }
 
@@ -100,6 +104,11 @@ input {
 }
 
 .game-card:hover .title {
+  opacity: 1;
+  transition: all 300ms !important;
+}
+
+.game-card:hover .content {
   opacity: 1;
   transition: all 300ms !important;
 }
@@ -140,7 +149,7 @@ input {
 
 kbd {
   font-family: Arial, sans-serif;
-  background-color: #1f2228;
+  background-color: #1b1b1b;
   border: 1px solid #495057;
   padding: 5px 10px;
   border-radius: 3px;

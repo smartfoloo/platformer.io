@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 :root{
-	--proformer: #1f2228;
+	--proformer: #1b1b1b;
 }
 
 * {
@@ -11,7 +11,7 @@
 
 body{
 	font-family: 'Inter';
-  background: #03131a;
+  background: #121212;
 	line-height: 1.7;
 	color: #fff;
 	letter-spacing: 0.2px;
@@ -76,7 +76,7 @@ h3 {
 
 .gameframe {
   height: 80vh;
-  border: 3px solid #1f2228;
+  border: 3px solid #1b1b1b;
   overflow: scroll;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;

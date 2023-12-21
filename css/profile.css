@@ -38,13 +38,12 @@ h5 {
 }
 
 .box {
-  background: transparent;
+  background: #1b1b1b;
   border-radius: 15px;
   margin: 10px 200px;
   padding: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center !important;
-  outline: 1px solid #495057;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,7 +66,6 @@ h5 {
   text-decoration-style: solid;
   text-decoration-color: #fff;
   transition: 300ms;
-  outline: 1px solid #495057;
 }
 
 ::placeholder {

@@ -32,27 +32,26 @@
 <body>
    <nav class="nav">
       <div class="right">
-         <i class="uil uil-bars navOpenBtn"></i>
-         <a href="/index.html" class="logo">
-            <img src="/favicon.png" class="logo-image">
-            Platformer.io
-         </a>
-         <ul class="nav-links">
-            <i class="uil uil-times navCloseBtn"></i>
-            <li><a href="/index.html"><i class="fa-solid fa-house" style="margin-right: 5px;"></i>Home</a></li>
-            <li><a href="/games"><i class="fa-solid fa-gamepad" style="margin-right: 5px;"></i>Games</a></li>
-           <!--<li><a href="/music.html"><i class="fa-solid fa-music" style="margin-right: 5px;"></i>Music</a></li>-->
-            <li><a href="/extras"><i class="fa-solid fa-circle-plus" style="margin-right: 5px;"></i>Extras</a></li>
-            <li><a href="/settings.html"><i class="fa-solid fa-gear" style="margin-right: 5px;"></i>Settings</a></li>
-            <li><a href="/profile.html"><i class="fa-solid fa-user" style="margin-right: 5px;"></i>Profile</a></li>
-         </ul>
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="/index.html" class="logo">
+          <img src="/favicon.png" class="logo-image">
+          Platformer.io
+        </a>
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="/index.html"><i class="fa-solid fa-house" style="margin-right: 5px;"></i>Home</a></li>
+          <li><a href="/games"><i class="fa-solid fa-gamepad" style="margin-right: 5px;"></i>Games</a></li>
+          <!--<li><a href="/music.html"><i class="fa-solid fa-music" style="margin-right: 5px;"></i>Music</a></li>-->
+          <li><a href="/extras"><i class="fa-solid fa-circle-plus" style="margin-right: 5px;"></i>Extras</a></li>
+        </ul>
       </div>
       <div class="left">
-         <div id="clock" class="clock hidden" onload="showTime()"></div>
+        <button class="nav-big-btn"><a href="/settings.html"><i class="fa-solid fa-gear"></i></a></button>
+        <button class="nav-big-btn"><a href="/profile.html"><i class="fa-solid fa-user"></i></a></button>
       </div>
    </nav>
    <div class="main-content">
-      <h2 style="font-weight: 300;">Special shoutout to MilanZ or Shayal Hashwani</h2>
+      <h2 id="randomText" style="font-weight: 300;"></h2>
       <div class="input-div">
          <input type="text" id="searchInput" placeholder="Search">
       </div>
