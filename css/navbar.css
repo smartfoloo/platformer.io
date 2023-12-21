@@ -74,6 +74,7 @@ a {
   border-radius: 15px;
   cursor: pointer;
   transition: 300ms;
+  color: #fff;
 }
 
 .nav .nav-big-btn:hover {
