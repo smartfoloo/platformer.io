@@ -28,6 +28,25 @@
     a:hover{
         color:#1cd96a;
     }
+    #image-dropdown {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    #image-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    #image-dropdown-content img {
+      width: 100%;
+      cursor: pointer;
+    }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -58,7 +77,15 @@
     </div>
   </nav>
   <div class="main-content">
-   
+    <div id="image-dropdown">
+        <div onclick="toggleDropdown()" id="selected-image">
+          <img style="height:75px;width:75px;"src="https://github.com/smartfoloo/platformer.io/blob/main/favicon.png?raw=true" alt="Default Image">
+        </div>
+        <div id="image-dropdown-content">
+          <img style="height:75px;width:75px;"src="https://github.com/smartfoloo/platformer.io/blob/main/favicon.png?raw=true" alt="Image 1" onclick="changePage('page1.html')">
+          <img style="height:75px;width:75px;"src="https://github.com/smartfoloo/platformer.io/blob/main/favicon.png?raw=true" alt="Image " onclick="changePage('page2.html')">
+        </div>
+    </div>
     <div class="box">
         <br>
         <h3 style="margin-bottom: 10px; font-size:30px;">Platformer.io Links</h3>
@@ -96,4 +123,24 @@
 
 
 <script src="/js/sw.js"></script>
+<script>
+function toggleDropdown() {
+      var dropdownContent = document.getElementById("image-dropdown-content");
+      dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+    }
+    function changePage(pageUrl) {
+      window.location.href = pageUrl;
+    }
+    window.onclick = function(event) {
+      if (!event.target.matches('#image-dropdown')) {
+        var dropdowns = document.getElementsByClassName("image-dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.style.display === "block") {
+            openDropdown.style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
 </html>
