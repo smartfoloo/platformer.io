@@ -159,10 +159,6 @@ label {
   font-family: 'Inter';
 }
 
-select:focus {
-  transform: scale(1.1);
-}
-
 option {
   font-family: 'Inter';
   color: #fff;

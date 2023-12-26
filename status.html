@@ -11,7 +11,7 @@
   <link rel="icon" href="/favicon.png" type="image/xcon" />
   <link rel="manifest" href="/manifest.json" />
   <link rel="stylesheet" href="/css/navbar.css" />
-  <link rel="stylesheet" href="/css/extras.css" />
+  <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/footer.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2W1BSNMG9"></script>
   <script>
@@ -71,43 +71,36 @@
       </ul>
     </div>
     <div class="left">
-        <a href="/status.html"><button class="nav-big-btn"><i class="fa-solid fa-info"></i></button></a>
+      <a href="/status.html"><button class="nav-big-btn"><i class="fa-solid fa-question"></i></button></a>
       <a href="/settings.html"><button class="nav-big-btn"><i class="fa-solid fa-gear"></i></button></a>
-        <a href="/profile.html"><button class="nav-big-btn"><i class="fa-solid fa-user"></i></button></a>
+      <a href="/profile.html"><button class="nav-big-btn"><i class="fa-solid fa-user"></i></button></a>
     </div>
   </nav>
   <div class="main-content">
-    <div id="image-dropdown">
-        <div onclick="toggleDropdown()" id="selected-image">
-          <img style="height:75px;width:75px;"src="https://github.com/smartfoloo/platformer.io/blob/main/favicon.png?raw=true" alt="Default Image">
-        </div>
-        <div id="image-dropdown-content">
-          <img style="height:75px;width:75px;"src="https://github.com/smartfoloo/platformer.io/blob/main/favicon.png?raw=true" alt="Image 1" onclick="changePage('page1.html')">
-          <img style="height:75px;width:75px;"src="https://github.com/smartfoloo/platformer.io/blob/main/favicon.png?raw=true" alt="Image " onclick="changePage('page2.html')">
-        </div>
-    </div>
     <div class="box">
-        <br>
-        <h3 style="margin-bottom: 10px; font-size:30px;">Platformer.io Links</h3>
-        <br>
-
-        <h3 style="margin-bottom: 10px;">Official Link:</h3>
-            <a href="https://platformerdotio.co" target="_parent"><h4>https://platformerdotio.co 🟢</h4></a>
-        
-        <br>
-        <br>
-
-        <h3 style="margin-bottom: 10px;">Unlocked Links:</h3>
-        <a href="https://nearpod.pages.dev" target="_parent">
-            <h4>https://nearpod.pages.dev 🟢</h4>
-        </a>
-        <a href="https://eduphoria.pages.dev" target="_parent">
-            <h4>https://eduphoria.pages.dev 🟢</h4>
-        </a>
+      <div class="status-icon">
+        <i class="fa-solid fa-circle-check"></i>
       </div>
+      <h2>All Features Operational</h2>
+      <div class="links-container">
+        <div class="half">
+          <h3>Main Link</h3>
+          <a href="https://platformerdotio.co" target="_parent">
+            <h4>https://platformerdotio.co</h4>
+          </a>
+        </div>
+        <div class="half">
+          <h3>Proxy Links</h3>
+          <a href="https://nearpod.pages.dev" target="_parent">
+            <h4>https://nearpod.pages.dev</h4>
+          </a>
+          <a href="https://areyouvegan.vercel.app" target="_parent">
+            <h4>https://areyouvegan.vercel.app</h4>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
-
-</div>
   <footer class="footer">
     <p>Copyright Platformer.io 2023</p>
     <div id="google_translate_element"></div>
@@ -123,24 +116,4 @@
 
 
 <script src="/js/sw.js"></script>
-<script>
-function toggleDropdown() {
-      var dropdownContent = document.getElementById("image-dropdown-content");
-      dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
-    }
-    function changePage(pageUrl) {
-      window.location.href = pageUrl;
-    }
-    window.onclick = function(event) {
-      if (!event.target.matches('#image-dropdown')) {
-        var dropdowns = document.getElementsByClassName("image-dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.style.display === "block") {
-            openDropdown.style.display = "none";
-          }
-        }
-      }
-    }
-  </script>
 </html>
