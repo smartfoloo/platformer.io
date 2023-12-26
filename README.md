@@ -19,7 +19,7 @@ The best place for Unblocked Games on Mars. This is a free-for-all unblocked gam
 
 #### I wanna make a copy of Platformer.io!!1!! How do I do it?
 
-Please refer to this lovely wiki article (it's not boring i promise) --> [[Deployment]](https://github.com/smartfoloo/platformer.io/wiki/Deployment)
+Please refer to this lovely wiki article (it's not boring i promise) --> [Deployment](https://github.com/smartfoloo/platformer.io/wiki/Deployment)
 
 #### The Games don't work on my deployed version.
 
