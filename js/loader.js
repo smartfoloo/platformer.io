@@ -18,6 +18,10 @@ if (gameToLoad) {
     gameframe.src = 'https://smartfoloolol.netlify.app/assets/san-francisco';
     gamename.textContent = 'San Francisco';
     gameimage.src = '/images/sanfrancisco.png';
+    } else if (gameToLoad === 'spankthemonkey') {
+    gameframe.src = 'https://cdn.githubraw.com/selenite-cc/selenite/main/spankthemonkey/index.html';
+    gamename.textContent = 'Spank The Monkey';
+    gameimage.src = '/images/spankthemonkey.svg';
   } else if (gameToLoad === 'funny-shooter-2') {
     gameframe.src = 'https://smartfoloolol.netlify.app/assets/funny-shooter-2';
     gamename.textContent = 'Funny Shooter 2';
