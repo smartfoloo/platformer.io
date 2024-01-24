@@ -66,20 +66,18 @@ input:hover {
   border-radius: 30px;
   overflow: hidden;
   position: relative;
-  transition: all 200ms;
+  transition: all 300ms;
   border: 3px solid transparent;
   display: block;
   margin: 15px;
 }
 
 .game-card:hover {
-  transform: scale(1.1);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   border-color: var(--default);
 }
 
 .game-card:active{
-  transform: scale(1);
   border-color: transparent;
 }
 
@@ -106,17 +104,17 @@ input:hover {
   text-align: center;
   margin: 0;
   opacity: 0;
-  transition: all 200ms !important;
+  transition: all 300ms !important;
 }
 
 .game-card:hover .title {
   opacity: 1;
-  transition: all 200ms !important;
+  transition: all 300ms !important;
 }
 
 .game-card:hover .content {
   opacity: 1;
-  transition: all 200ms !important;
+  transition: all 300ms !important;
 }
 
 .fa-star {
