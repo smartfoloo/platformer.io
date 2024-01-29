@@ -1,5 +1,5 @@
 * {
-  font-family: 'Nunito';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 h3 {
@@ -90,31 +90,27 @@ input:hover {
 .game-card .content {
   box-sizing: border-box;
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
   position: absolute;
-  padding-bottom: 3px;
-  height: auto;
+  padding: 5px;
   bottom: 0;
   opacity: 0;
+  transition: ease 300ms;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
 }
 
 .game-card .title {
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
   text-align: center;
-  margin: 0;
-  opacity: 0;
-  transition: all 300ms !important;
-}
-
-.game-card:hover .title {
-  opacity: 1;
-  transition: all 300ms !important;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .game-card:hover .content {
   opacity: 1;
-  transition: all 300ms !important;
 }
 
 .fa-star {
@@ -171,7 +167,7 @@ kbd {
   padding: 15px 20px;
   border-radius: 23px;
   transition: all 300ms;
-  cursor: poNunito;
+  cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   margin: 10px 0px;
 }

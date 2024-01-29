@@ -74,6 +74,14 @@ if (gameToLoad) {
     gameframe.src = 'https://dadish3.netlify.app/';
     gamename.textContent = 'Dadish 3';
     gameimage.src = '/images/dadish3.avif';
+  } else if (gameToLoad === 'level-devil') {
+    gameframe.src = 'https://smartfoloosanta.pages.dev/level-devil';
+    gamename.textContent = 'Dadish 3';
+    gameimage.src = '/images/leveldevil.avif';
+  } else if (gameToLoad === 'blumgi-dragon') {
+    gameframe.src = 'https://smartfoloo-blumgi-dragon.netlify.app';
+    gamename.textContent = 'Dadish 3';
+    gameimage.src = '/images/blumgidragon.avif';
   } else {
     const imageName = gameToLoad.replace(/-/g, '');
     const imageSrcPng = `/images/${imageName}.png`;
