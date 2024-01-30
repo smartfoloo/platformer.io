@@ -79,8 +79,8 @@ if (gameToLoad) {
     gamename.textContent = 'Dadish 3';
     gameimage.src = '/images/leveldevil.avif';
   } else if (gameToLoad === 'blumgi-dragon') {
-    gameframe.src = 'https://smartfoloo-blumgi-dragon.netlify.app';
-    gamename.textContent = 'Dadish 3';
+    gameframe.src = 'https://gefjwhkqgg.bitbucket.io';
+    gamename.textContent = 'Blumgi Dragon';
     gameimage.src = '/images/blumgidragon.avif';
   } else {
     const imageName = gameToLoad.replace(/-/g, '');
