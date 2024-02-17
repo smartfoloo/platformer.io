@@ -6,9 +6,31 @@
 The best place for Unblocked Games on Mars. This is a free-for-all unblocked games website to use. You can deploy it to whatever service to make your own link!
 
 ## Deployment
+#### FreeDNS
 
+1. Go to https://freedns.afraid.org/
+
+2. Sign up for a new account or log in to your existing account
+
+3. Go to `subdomains` on the left
+
+4. Click on `Add a subdomain`
+
+5. Click on the dropdown that says `chickenkiller.com (public)` and select `Many more available`
+
+6. Choose a subdomain that is marked as public (DM <@926711054602473552> for subdomains that are unblocked for each blocker
+
+7. After you have selected one, enter the subdomain you would like to have (ex: classes.tomahawkchurch.org)
+
+8. Create an `A` record that points to `66.179.254.164`
+
+9. DM me to activate your domain
+
+**If you have any questions, please DM me and I will try to answer quick:)**
+
+#### Hosting Services
 > **Note**
-> You need to contact us in order to add your site to our sitelock. Otherwise, the games won't work.
+> You need to contact me in order to add your site to our sitelock. Otherwise, the games won't work. These services may not be unblocked in your school.
 
 [![Deploy with Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/smartfoloo/platformer.io-deploy)
 [![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/smartfoloo/platformer.io-deploy)
