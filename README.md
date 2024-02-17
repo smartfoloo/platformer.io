@@ -6,7 +6,7 @@
 The best place for Unblocked Games on Mars. This is a free-for-all unblocked games website to use. You can deploy it to whatever service to make your own link!
 
 ## Deployment
-#### FreeDNS
+### FreeDNS
 
 1. Go to https://freedns.afraid.org/
 
@@ -28,7 +28,7 @@ The best place for Unblocked Games on Mars. This is a free-for-all unblocked gam
 
 **If you have any questions, please DM me and I will try to answer quick:)**
 
-#### Hosting Services
+### Hosting Services
 > **Note**
 > You need to contact me in order to add your site to our sitelock. Otherwise, the games won't work. These services may not be unblocked in your school.
 
