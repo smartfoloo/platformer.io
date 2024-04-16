@@ -18,7 +18,7 @@ if (tabData.icon) {
 }
 
 var settingsDefaultTab = {
-  title: "Platformer.io",
+  title: "Archived",
   icon: "/favicon.png",
 };
 
